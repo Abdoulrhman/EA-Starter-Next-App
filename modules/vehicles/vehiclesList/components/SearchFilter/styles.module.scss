@@ -1,0 +1,64 @@
+.main {
+    margin: 0px auto 25px;
+    position: relative;
+    input{
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid #E2E2E2 !important;
+        border-radius: 22px;
+        width: 100%;
+        font-size: 15px;
+         color: #93999D;
+    }
+    input:focus{
+        border: 0;
+        outline: none;
+
+    }
+}
+.border{
+    border-left: 1px solid #E2E2E2 !important;
+    position: relative;
+    left: 88%;
+    top: 0px;
+    z-index: 99999;
+}
+.hasSearch .formControl {
+    padding-left: 2.375rem;
+}
+.hasSearch .formControlFeedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 17px;
+    height: 17px;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    right: 15px;
+    bottom: 35%;
+}
+
+html[dir="rtl"] {
+    .main {
+        input{
+        }
+        input:focus{
+        }
+    }
+    .border{
+        border-left: 0px solid #E2E2E2 !important;
+        border-right: 1px solid #E2E2E2 !important;
+        right: 88%;
+        left: auto;
+    }
+    .hasSearch .formControl {
+        padding-right: 2.375rem;
+        padding-left: 0rem;
+    }
+    .hasSearch .formControlFeedback {
+        right: auto;
+        left: 15px;
+    }
+}

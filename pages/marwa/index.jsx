@@ -1,10 +1,10 @@
 import Home from '../../components/Home/Home';
+import Filter from '../../modules/vehicles/vehiclesList/components/Filter/Filter';
 
 function TestPage() {
   return (
     <div>
-      <h1>Test</h1>
-      <Home />
+      <Filter />
     </div>
   );
 }
