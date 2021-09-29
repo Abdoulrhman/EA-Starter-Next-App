@@ -1,0 +1,1 @@
+## Folder for adding the constants around the app ##

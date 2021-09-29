@@ -1,0 +1,1 @@
+## Folder for adding the pages templates around the app ##
