@@ -1,3 +1,5 @@
+const a11yOff = Object.keys(require('eslint-plugin-jsx-a11y').rules).reduce((acc, rule) => { acc[`jsx-a11y/${rule}`] = 'off'; return acc }, {})
+
 module.exports = {
   env: {
     browser: true,
@@ -13,6 +15,7 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    ...a11yOff,
     'no-console': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // Best Practices
@@ -66,4 +69,4 @@ module.exports = {
     'prefer-template': 'error',
 
   },
-};
+}
