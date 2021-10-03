@@ -1,0 +1,72 @@
+.iconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff ;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.iconBorderContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+  
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.iconFillContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff ;
+    box-shadow: 0px 3px 6px #00000029;
+    
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.iconWtextContainer{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    .iconText{
+        font-size: 9px;
+    }
+}
+
+.postionStyle{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+html[dir="rtl"]{
+    .postionStyle{
+        left: auto;
+        right: 10px;
+    }
+}

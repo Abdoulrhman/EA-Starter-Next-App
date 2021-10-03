@@ -4,7 +4,8 @@
     width: 90%;
     .itemContainer{
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
     }
     .footerImage{
         object-fit: contain;
@@ -12,8 +13,7 @@
     .footerText{
         color: #404040;
         font-size: 14px;
-        margin-inline-start: 5px;
-
+  
         @media (max-width: 575.98px) { 
             font-size: 13px;
          }

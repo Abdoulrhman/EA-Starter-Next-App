@@ -11,12 +11,13 @@
     list-style: none;
     padding: 15px;
     position: absolute;
-    bottom: 15px;
+    bottom: 25px;
+    right: 8px;
 }
 .listItem{
     display: flex;
     align-items: center;
-    
+    padding: 10px 0;
     &:not(:last-child){
         border-bottom: 1px solid #E4E8F0;
     }
@@ -29,5 +30,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-inline-end: 10px;
+    }
+}
+
+html[dir="rtl"]{
+    .container{
+        left: 8px;
+        right: auto;
     }
 }

@@ -6,7 +6,17 @@
     height: 40px;
     border-radius: 50%;
     background: linear-gradient(270deg, #08BAC1 0%, #60D272 100%) 0% 0%;
+}
+
+.positionStyle{
     position: absolute;
-    // bottom: -20px;
-    // right: 10px;
+    bottom: -20px;
+    right: 10px;
+}
+
+html[dir="rtl"]{
+    .positionStyle{
+        right: auto;
+        left: 10px;
+    }
 }
