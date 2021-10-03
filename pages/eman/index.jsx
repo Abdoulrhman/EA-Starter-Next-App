@@ -4,6 +4,7 @@ import CardInformation from './../../modules/vehicles/VehicleDetails/CardInforma
 import Highlights from '../../modules/vehicles/VehicleDetails/Highlights';
 import Description from '../../modules/vehicles/VehicleDetails/Description';
 import Documents from '../../modules/vehicles/VehicleDetails/Documents';
+import Specifications from '../../modules/vehicles/VehicleDetails/Specifications';
 
 function index() {
   return (
@@ -13,6 +14,7 @@ function index() {
       {/* <Highlights /> */}
       {/* <Description /> */}
       {/* <Documents /> */}
+      <Specifications />
     </div>
   )
 }
