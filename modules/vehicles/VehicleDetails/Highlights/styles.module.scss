@@ -25,21 +25,14 @@
         .optionTitle{
             color: #828E99;
             font-size: 16px;
-            margin: 0px 0px 8px 0px;
-            &:not(:first-child){
-                padding-top: 15px;
-            }
+            margin-bottom: 8px;
         }
         .optionsContainer{
-
+            list-style: initial;
             .optionItem{
                 color: #404040;
                 font-size: 14px;
-              
-                &:not(:last-child){
-                    border-bottom: 1px solid #EDEDED;
-                    padding-bottom: 15px;
-                }
+                margin-inline-start: 18px;
             }
         }
 

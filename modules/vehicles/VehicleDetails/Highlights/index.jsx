@@ -41,7 +41,7 @@ function Highlights() {
                     {
                         Id: 0,
                         Title: "GCC Specifications"
-                    }
+                    },
                 ]
             },
         ],
@@ -61,14 +61,15 @@ function Highlights() {
                     {info.OptionGroups.map(
                         (o, indx) =>
                             o.Options.length > 0 && (
-                                <>
-                                    <h4 className={styles.optionTitle} key={indx}>{o.Title}</h4>
-                                    {o.Options.map((option, indx) => (
-                                        <li className={styles.optionItem} key={indx}>
+                                <div key={indx}>
+                                    <h4 className={styles.optionTitle} >{o.Title}</h4>
+                                    {o.Options.map((option, i) => (
+                                        <li className={styles.optionItem} key={i}>
                                             {option.Title}
                                         </li>
                                     ))}
-                                </>
+                                    {indx < info.OptionGroups.length - 1 && <Divider width="100%" height="1px" bgColor="#EDEDED" margin="15px 0" />}
+                                </div>
                             )
                     )}
                 </ul>

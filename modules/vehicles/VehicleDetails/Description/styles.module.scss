@@ -23,30 +23,23 @@
         padding: 30px;
 
         .optionsContainer{
+            list-style: initial;
 
             .optionHead{
                 display: flex;
                 align-items: center;
                 gap: 8px;
-                margin: 0px 0px 8px 0px;
+                margin-bottom: 8px;
 
                 .optionTitle{
                     color: #828E99;
                     font-size: 16px;      
                 }
-
-                 &:not(:first-child){
-                        padding-top: 15px;
-                }
             }
             .optionItem{
                 color: #404040;
                 font-size: 14px;
-              
-                &:not(:last-child){
-                    border-bottom: 1px solid #EDEDED;
-                    padding-bottom: 15px;
-                }
+                margin-inline-start: 18px;
             }
         }
 

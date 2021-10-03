@@ -49,17 +49,18 @@ function Description() {
                     {description.OptionGroups.map(
                         (o, indx) =>
                             o.Options.length > 0 && (
-                                <>
-                                    <div key={indx} className={styles.optionHead}>
+                                <div key={indx}>
+                                    <div className={styles.optionHead}>
                                         <img style={{ width: "18px" }} src={o.ImageUrl} alt="icon" />
                                         <h4 className={styles.optionTitle} >{o.Title}</h4>
                                     </div>
-                                    {o.Options.map((option, indx) => (
-                                        <li className={styles.optionItem} key={indx}>
+                                    {o.Options.map((option, i) => (
+                                        <li className={styles.optionItem} key={i}>
                                             {option.Title}
                                         </li>
                                     ))}
-                                </>
+                                    {indx < description.OptionGroups.length - 1 && <Divider width="100%" height="1px" bgColor="#EDEDED" margin="15px 0" />}
+                                </div>
                             )
                     )}
                 </ul>
