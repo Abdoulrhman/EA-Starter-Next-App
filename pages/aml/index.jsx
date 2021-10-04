@@ -1,10 +1,10 @@
 import React from 'react'
-import List from '../../common/components/CardList/List'
+import Error from '../../common/components/Error/Error.jsx'
 
 function HeaderPage() {
   return (
     <div>
-      <List />
+      <Error />
     </div>
   )
 }
