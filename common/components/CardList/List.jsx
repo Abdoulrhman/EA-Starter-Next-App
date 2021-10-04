@@ -1,21 +1,22 @@
 import React from 'react'
 import Image from 'next/image'
 import Pinned from '../../../public/assets/icons/pinnedNew.svg'
-import Noti from '../../../public/assets/icons/notification.svg'
+import Noti from '../../../public/assets/icons/Notification.svg'
 import Share from '../../../public/assets/icons/shareNew.svg'
 import Clock from '../../../public/assets/icons/clock.svg'
 import Dots from '../../../public/assets/icons/dots.svg'
 import bidGray from '../../../public/assets/icons/bidGray.svg'
-import heart from '../../../public/assets/icons/haert.svg'
+import heart from '../../../public/assets/icons/heart.svg'
 import Speed from '../../../public/assets/icons/speed.svg'
-import HammerWhite from '../../../public/assets/icons/HammerWhite.svg'
+import hammerWhite from '../../../public/assets/icons/hammerWhite.svg'
+import hammer from '../../../public/assets/icons/hammer.svg'
 
 import styles from './styles.module.scss'
 
 const Header = () => (
   <div>
     {/* Start Wrapper */}
-    <div className={styles.warpper}>
+    <div className={styles.wrapper}>
       <div className={styles.list}>
         <div className={styles.list_img}>
           <div className={styles.image_Wrapper}>
@@ -26,7 +27,7 @@ const Header = () => (
                 <label className={styles.heartStatusText}>
                   <img
                     className={styles.heartIcon}
-                    src="/assets/icons/haert.svg"
+                    src="/assets/icons/heart.svg"
                   />
                   <span>Added to watchlist</span>
                 </label>
@@ -38,7 +39,10 @@ const Header = () => (
           <div className={styles.list_title}>
             <h3>2021 Porsche Cayen</h3>
             <div>
-              <ul className={`${styles.cartSocail} ${styles.hiddenTablet}`}>
+              <ul className={`${styles.cartSocial} ${styles.hiddenTablet}`}>
+                <li className={styles.cartSocialList}>
+                  <img src="/assets/icons/hammer.svg" />
+                </li>
                 <li
                   className={`${styles.cartSocailList} ${styles.backgroundPinned}`}
                 >
@@ -54,8 +58,9 @@ const Header = () => (
                 >
                   <img src="assets/icons/notification.svg" />
                 </li>
+
               </ul>
-              <ul className={`${styles.cartSocail} ${styles.showTablet}`}>
+              <ul className={`${styles.cartSocial} ${styles.showTablet}`}>
                 <li className={styles.cartSocailList}>
                   <img src="/assets/icons/dots.svg" />
                 </li>
@@ -63,10 +68,11 @@ const Header = () => (
             </div>
           </div>
 
-          <div className={styles.proudectStatus}>
+          <div className={styles.productStatus}>
             <label className={styles.labelStatus}>
               <span>Luxury</span>
             </label>
+
           </div>
 
           <div className={styles.stats}>
@@ -80,7 +86,7 @@ const Header = () => (
                 <span>364</span>
               </li>
               <li>
-                <Image src={Speed} />
+                <img src="assets/icons/speed.svg"/>
                 <span>364</span>
               </li>
             </ul>
@@ -93,13 +99,16 @@ const Header = () => (
           </span>
           <div className={styles.priceStyle}>
             <span>Min Increment :</span>
-            <sub> AED</sub>
-            <span className={styles.secoundSpan}>100</span>
+            <label> AED</label>
+            <sub>
+              <span className={styles.secondSpan}>100</span>
+            </sub>
           </div>
-          <button className={styles.bidBtn}>
+          <button type="button" className={styles.bidBtn}>
             <img
               className={styles.bidImg}
-              src="assets/icons/HammerWhite.svg"
+              src="/assets/icons/hammerWhite.svg"
+
             />
             <span> Bid Now</span>
           </button>
@@ -107,7 +116,7 @@ const Header = () => (
       </div>
     </div>
     {/* End Wrapper */}
-    <div className={styles.warpper}>
+    <div className={styles.wrapper}>
       <div className={styles.list}>
         <div className={styles.list_img}>
           <div className={styles.image_Wrapper}>

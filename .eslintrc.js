@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const a11yOff = Object.keys(require('eslint-plugin-jsx-a11y').rules).reduce((acc, rule) => { acc[`jsx-a11y/${rule}`] = 'off'; return acc }, {})
 
 module.exports = {
@@ -16,6 +17,7 @@ module.exports = {
   plugins: ['react'],
   rules: {
     ...a11yOff,
+    'linebreak-style': 0,
     'no-console': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // Best Practices
@@ -38,7 +40,6 @@ module.exports = {
     'comma-style': 'error',
     'computed-property-spacing': 'error',
     'func-call-spacing': 'error',
-    'implicit-arrow-linebreak': ['error', 'beside'],
     // indent: ['error', 4],
     'keyword-spacing': 'error',
     'multiline-ternary': ['error', 'never'],

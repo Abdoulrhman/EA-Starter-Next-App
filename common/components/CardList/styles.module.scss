@@ -1,4 +1,5 @@
-.warpper {
+
+.wrapper {
   width: 80%;
   background-color: #fff;
   float: right;
@@ -33,7 +34,7 @@
           position: absolute;
           font-size: 13px;
           align-items: center;
-          border-radius: 3px;
+          border-radius: 0px 2px 2px 0px;
           text-transform: capitalize;
           justify-content: center;
           background-color: rgb(66 74 100 / 80%);
@@ -92,12 +93,12 @@
             justify-content: center;
             .heartStatusText {
               color: #404040;
-              font-size: 9px;
+              font-size: 10px;
               display: flex;
             }
             .heartIcon {
-              width: 15px;
-              height: 15px;
+              width: 18px;
+              height: 18px;
             }
             .rightIcon {
               color: "#404040";
@@ -124,15 +125,17 @@
       flex-direction: column;
       justify-content: center;
       flex: 1;
-        h4 {
-          color: #ff422f;
-          font-size: 14px;
-          font-weight: bold;
-        }
-        p {
-          color: #404040;
-          font-size: 12px;
-        }
+      h4 {
+        color: #ff422f;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+      }
+      p {
+        color: #404040;
+        font-size: 12px;
+        margin: 16px 0;
+      }
       .list_title {
         display: flex;
         justify-content: space-between;
@@ -147,18 +150,19 @@
           text-align: start;
           margin: 0;
           padding-bottom: 5px;
+          font-weight: bold;
         }
-      
-        .cartSocail {
+
+        .cartSocial {
           list-style: none;
           padding: 0;
           display: flex;
           margin: 0;
         }
-        .cartSocailList {
+        .cartSocialList {
           display: flex;
           align-items: center;
-          margin-left: 8px;
+          margin: 0 5px;
           justify-content: center;
         }
         .backgroundGray {
@@ -193,13 +197,14 @@
     }
   }
 
-  .proudectStatus {
+  .productStatus {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
     .labelStatus {
       color: #424a64;
       display: flex;
-      padding: 3px 4px 2px 5px;
+      padding: 3px 4px 3px 5px;
       font-size: 12px;
       min-width: 55px;
       min-height: 17px;
@@ -255,7 +260,7 @@
   .priceStyle {
     color: #404040;
     margin-bottom: 5px;
-    .secoundSpan {
+    .secondSpan {
       font-weight: bold;
       margin: 0px 3px;
     }
@@ -272,21 +277,22 @@
     height: 38px;
     text-align: center;
     color: #fff;
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    .bidImg{
-        margin-right: 10px;
+    .bidImg {
+      margin-right: 10px;
+      
     }
-     .bidImgAr{
-        margin-left: 10px;
+    .bidImgAr {
+      margin-left: 10px;
     }
   }
 }
 // media query
 
 @media (max-width: 1024px) {
-  .warpper {
+  .wrapper {
     width: 100%;
   }
   .showTablet {
@@ -294,7 +300,7 @@
   }
 }
 @media (max-width: 768px) {
-  .warpper {
+  .wrapper {
     width: 100%;
   }
   .priceStyle {
@@ -311,5 +317,43 @@
 @media (min-width: 1024px) {
   .showTablet {
     display: none !important;
+  }
+}
+
+// Direction RTL
+html[dir="rtl"] {
+  .heartWrapper {
+    top: 10px;
+    right: 10px;
+    left: auto;
+    position: absolute;
+
+    .rightIcon {
+      color: "#404040";
+      width: "12px";
+      height: "12px";
+      transform: "rotate(180deg)";
+      -webkit-transform: "rotate(180deg)";
+      -moz-transform: "rotate(180deg)";
+      -ms-transform: "rotate(180deg)";
+      -o-transform: "rotate(180deg)";
+    }
+  }
+  .bidImg {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  .cartBadge {
+    padding: 3px 6px 2px 7px;
+    border-radius: 2px 0px 0px 2px;
+  }
+}
+
+// Direction Rtl
+html[dir="rtl"] {
+  .labelStatus {
+    padding: 3px 5px 3px 4px;
+    margin-left: 8px;
+    margin-right: auto;
   }
 }
