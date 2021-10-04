@@ -1,10 +1,10 @@
 import React from 'react'
-import Error from '../../common/components/Error/Error.jsx'
+import Auction from '../../common/components/NoAuctions/index'
 
 function HeaderPage() {
   return (
     <div>
-      <Error />
+      <Auction />
     </div>
   )
 }
