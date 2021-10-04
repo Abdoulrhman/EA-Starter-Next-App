@@ -1,16 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
-import Pinned from '../../../public/assets/icons/pinnedNew.svg'
-import Noti from '../../../public/assets/icons/Notification.svg'
-import Share from '../../../public/assets/icons/shareNew.svg'
-import Clock from '../../../public/assets/icons/clock.svg'
-import Dots from '../../../public/assets/icons/dots.svg'
-import bidGray from '../../../public/assets/icons/bidGray.svg'
-import heart from '../../../public/assets/icons/heart.svg'
-import Speed from '../../../public/assets/icons/speed.svg'
-import hammerWhite from '../../../public/assets/icons/hammerWhite.svg'
-import hammer from '../../../public/assets/icons/hammer.svg'
-
 import styles from './styles.module.scss'
 
 const Header = () => (
