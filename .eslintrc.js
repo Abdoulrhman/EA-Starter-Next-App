@@ -19,6 +19,7 @@ module.exports = {
     'linebreak-style': 0,
     'no-console': 'off',
     'no-nested-ternary': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // Best Practices
     eqeqeq: 'error',
