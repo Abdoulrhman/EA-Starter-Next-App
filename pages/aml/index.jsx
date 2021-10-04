@@ -1,10 +1,10 @@
 import React from 'react'
-import Auction from '../../common/components/NoAuctions/index'
+import Re from '../../common/components/Results/Results'
 
 function HeaderPage() {
   return (
     <div>
-      <Auction />
+      <Re />
     </div>
   )
 }
