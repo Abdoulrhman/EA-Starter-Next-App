@@ -5,4 +5,4 @@ module.exports = {
     defaultLocale: 'en',
   },
   reactStrictMode: true,
-};
+}

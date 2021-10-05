@@ -1,0 +1,30 @@
+.login_wrapper{
+    .formSection{
+        padding: 75px 75px 0px 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+
+       
+        .loginTitle {
+            font-size: 2.5rem;
+            width: 75%;
+        
+        }
+        .forgetLink{
+            text-decoration: underline;
+            
+        }
+
+        button{
+            background: #E51937;
+            padding: 15px 0px;
+            border-radius: 30px;
+            width: 30%;
+            color: #FFF;
+        }
+     
+    }
+   
+}

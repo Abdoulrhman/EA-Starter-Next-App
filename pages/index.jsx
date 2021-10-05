@@ -1,8 +1,12 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import React from 'react'
+import Link from 'next/link'
 
-const Home = () => {
-  return <h1 className="bg-primary flex text-tizo">Hello</h1>;
-};
+const Home = () => (
+  <h1 className="flex justify-center items-center">
+    <button type="button">
+      <Link href="/login">Login</Link>
+    </button>
+  </h1>
+)
 
-export default Home;
+export default Home
