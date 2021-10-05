@@ -1,0 +1,110 @@
+.wrapper {
+  width: 80%;
+  background-color: #fff;
+  float: right;
+  .auctionGrid {
+    display: flex;
+    justify-content: space-between;
+    .auctionDetails {
+      box-shadow: 0px 5px 24px #656f7c29;
+      border-radius: 8px;
+      flex: 1;
+      padding-bottom: 25px;
+      .auctionDetailsHeader {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid #ededed;
+        padding: 30px 22px 30px 22px;
+        h4 {
+          margin: 0;
+          font-weight: bold;
+        }
+      }
+      .auctionDetailsBody {
+        
+        .paymentTabs {
+          overflow: hidden;
+                      overflow-x: scroll;
+                      background-color: #F7FAFC;
+
+          .ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            position: relative;
+            min-width: 180%;
+            padding: 10px 0;
+            flex: 1 1 auto;
+
+            .active {
+              font-weight: bold;
+              border-bottom: 2px solid #e51937;
+              padding-bottom: 10px;
+            }
+            .disabled {
+              color: #828e99;
+              font-weight: bold;
+            }
+            li {
+              font-size: 14px;
+              margin: 0 15px;
+              width: 100%;
+            }
+          }
+        }
+        p {
+          font-size: 14px;
+          color: #404040;
+          margin-top: 15px;
+        }
+        .paymentInfo {
+          border-bottom: 1px solid #999999;
+          padding-bottom: 15px;
+          margin: 0px 22px 0px 22px;
+          .paymentDetails {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+              margin: 10px 0;
+              &:first-child {
+                color: #828e99;
+                font-size: 14px;
+              }
+              &:last-child {
+                color: #404040;
+                font-size: 14px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .paymentBtns {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 20px;
+          button {
+            background-color: #828e99;
+            width: 152px;
+            height: 32px;
+            border-radius: 8px;
+            border: 0;
+            color: #f7fafc;
+            margin: 0 10px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .ul {
+       
+            min-width: 250% !important;
+          
+}}
