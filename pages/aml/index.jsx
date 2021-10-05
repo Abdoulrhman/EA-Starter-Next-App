@@ -1,5 +1,5 @@
 import React from 'react'
-import Re from '../../common/components/AuctionaAlerts/AuctionaAlerts'
+import Re from '../../common/components/AuctionDetails/AuctionDetails.jsx'
 
 function HeaderPage() {
   return (
