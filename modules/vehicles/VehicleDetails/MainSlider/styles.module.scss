@@ -85,4 +85,10 @@
 	}
 }
 
-
+.imagesContainer{
+	direction: ltr !important;
+}
+.ImageGalleryMain{
+	object-fit: cover;
+	max-height: 85vh;
+}

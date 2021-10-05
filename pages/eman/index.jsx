@@ -17,6 +17,7 @@ function index() {
       {/* <Documents /> */}
       {/* <Specifications /> */}
       <MainSlider />
+      {/* <Gallery /> */}
     </div>
   )
 }

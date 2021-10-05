@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import ImageGallery from 'react-image-gallery'
 import styles from './styles.module.scss'
 // import RightArrow from '/assets/icons/arrow-right.svg'
 // import LeftArrow from '/assets/icons/arrow-left.svg'
@@ -32,6 +33,20 @@ function MainSlider() {
     { imgLink: 'https://cdn.emiratesauction.com/media/1sm2c3zyqitjdaxpjuhyuduldu4of69rn31fnel63iix3xd4ut/images.jpg' },
   ])
 
+  const images = [
+    {
+      original: 'https://picsum.photos/id/1018/1000/600/',
+      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    },
+    {
+      original: 'https://picsum.photos/id/1015/1000/600/',
+      thumbnail: 'https://picsum.photos/id/1015/250/150/',
+    },
+    {
+      original: 'https://picsum.photos/id/1019/1000/600/',
+      thumbnail: 'https://picsum.photos/id/1019/250/150/',
+    },
+  ]
 
   const handleOpen = (i) => {
     setOpen(true)
@@ -101,12 +116,12 @@ function MainSlider() {
   return (
     <div style={{ width: '600px', margin: '30px' }}>
       <Slider {...settings1}>
-        {Imgs.map((img) => (
+        {Imgs.map((img, i) => (
           <div
             key={img}
             onClick={(e) => {
               e.preventDefault()
-            //   handleOpen(i)
+              handleOpen(i)
             }}
           >
             <div style={{ position: 'relative', borderRadius: '4px' }}>
@@ -141,6 +156,21 @@ function MainSlider() {
           </div>
         ))}
       </Slider>
+      {open && (
+      <div className={styles.imagesContainer}>
+        <ImageGallery
+          onScreenChange={(e) => setOpen(e)}
+          ref={screen}
+          showPlayButton={false}
+          startIndex={mainImage}
+          isRTL={false}
+          slideOnThumbnailOver
+          showIndex
+          originalClass={styles.ImageGalleryMain}
+          items={images}
+        />
+      </div>
+      )}
     </div>
   )
 }
