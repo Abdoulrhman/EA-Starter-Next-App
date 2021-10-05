@@ -1,5 +1,5 @@
 import React from 'react'
-import Re from '../../common/components/CostSection/CostSection'
+import Re from '../../common/components/AskedSection/AskedSection'
 
 function HeaderPage() {
   return (
