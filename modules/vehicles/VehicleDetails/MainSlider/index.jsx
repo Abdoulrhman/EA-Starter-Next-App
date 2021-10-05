@@ -167,7 +167,12 @@ function MainSlider() {
           slideOnThumbnailOver
           showIndex
           originalClass={styles.ImageGalleryMain}
-          items={images}
+          items={Imgs.map(
+            (v) => (v = {
+              original: v.imgLink,
+              thumbnail: v.imgLink,
+            }),
+          )}
         />
       </div>
       )}
