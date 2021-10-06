@@ -32,24 +32,24 @@ const Header = () => (
                   <img src="/assets/icons/hammer.svg" />
                 </li>
                 <li
-                  className={`${styles.cartSocailList} ${styles.backgroundPinned}`}
+                  className={`${styles.cartSocialList} ${styles.backgroundPinned}`}
                 >
                   <img src="/assets/icons/pinnedNew.svg" />
                 </li>
                 <li
-                  className={`${styles.cartSocailList} ${styles.backgroundGray}`}
+                  className={`${styles.cartSocialList} ${styles.backgroundGray}`}
                 >
                   <img src="/assets/icons/shareNew.svg" />
                 </li>
                 <li
-                  className={`${styles.cartSocailList} ${styles.backgroundGray}`}
+                  className={`${styles.cartSocialList} ${styles.backgroundGray}`}
                 >
                   <img src="assets/icons/notification.svg" />
                 </li>
 
               </ul>
               <ul className={`${styles.cartSocial} ${styles.showTablet}`}>
-                <li className={styles.cartSocailList}>
+                <li className={styles.cartSocialList}>
                   <img src="/assets/icons/dots.svg" />
                 </li>
               </ul>
@@ -74,7 +74,7 @@ const Header = () => (
                 <span>364</span>
               </li>
               <li>
-                <img src="assets/icons/speed.svg"/>
+                <img src="assets/icons/speed.svg" />
                 <span>364</span>
               </li>
             </ul>
