@@ -1,94 +1,59 @@
-.mainSlider{
+.mainImageContainer{
 	position: relative;
-	// boxShadow: 'rgba(215, 221, 240, 0.49) -5px 0px 14px 9px',
-	& .slick-slide{
-		opacity: 0;
-	};
-	& .slick-active{
-		opacity: 1 !important;
-	};
-}
+	box-shadow: rgba(215, 221, 240, 0.49) -5px 0px 14px 9px;
+	height: 388px;
 
-.imgSliders{
-	width: 100%;
-	height: 35rem;
-	border-radius: 4px 0px 0px 4px;
-	object-fit: cover;
-	cursor: pointer;
-	outline: none;
+	.mainImage{
+		width: 100%;
+		height: 100%;
+		border-radius: 4px 0px 0px 4px;
+		object-fit: cover;
+		cursor: pointer;
+	}
 
-	&:foucs{
-		outline: none;
+	.overlay{
+		position: absolute;
+		top: 0px;
+		background-image: linear-gradient(180deg, #2d2d2d, transparent);
+		height: 15%;
+		width: 100%;
+		border-radius: 4px 0px 0px 4px;
 	}
 }
 
 .bottomSlider{
-	outline: none;
-	margin: 0px;
-	margin-top: -4.8rem;
+	margin-top: -7rem;
 	padding: 0px 25px;
 	width: 100%;
 	background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
-	& .slick-prev{
-		left: '10px';
-	};
-	& .slick-prev:before, .slick-next:before{
-		color: transparent !important;
-	};
-	& .slick-next{
-		right: 10px;
-	};
-	& .slick-slide{
-		opacity: 0;
-		z-index: -1000;
-	};
-	[dir="rtl"] .slick-next{
-		right: auto !important;
-		left: 10px !important;
-	};
-	& .slick-active{
-		opacity: 1 !important;
+
+	.smallImgSliders{
+		width: 100%;
+		height: 4.1rem;
+		border-radius: 2px;
+		object-fit: cover;
 		cursor: pointer;
-		padding: 0px 5px;
-		float: left !important
-	};
-	// & .slick-current{
-	// 	// & img{
-	// 	// 	// borderTop: '0.125rem solid',
-	// 	// 	// borderTopColor: theme.palette.primary.main,
-	// 	// }
-	// };
-	& .slick-arrow{
-		width: unset;
-		height: unset;
-	};
-	& .slick-prev:before, & .slick-next:before{
-		content: none
-	};
-
-	img{
-		padding: 0 5px !important;
+		margin: 0 10px;
+		padding: 0 5px;
 	}
+	// button{
+	// 	img{
+	// 		right: 0px !important;
+	// 	}
+	// }
+	
+}
+// .slick-slider .slick-initialized{
+// 	line-height: 0 !important;
 
-}
+// 	.slick-next {
+//     	right: 0px !important;
+// 	}
+// 	.slick-prev {
+//     	left: 0px !important;
+// 	}
+// }
 
-.smallImgSliders{
-	width: 100%;
-	height: 4.1rem;
-	border-radius: 4px;
-	object-fit: cover;
-	cursor: pointer;
-	outline: none;
-	margin: 0 10px;
-	&:foucs{
-		outline: none;
-	}
-}
-
-.imagesContainer{
-	direction: ltr !important;
-}
-.ImageGalleryMain{
-	object-fit: cover;
-	max-height: 85vh;
-}
+// .arrow{
+// 	right: 0px !important;
+// }

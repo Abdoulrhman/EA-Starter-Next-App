@@ -18,7 +18,9 @@ function MainSlider() {
   const SlickArrowFix = ({
     currentSlide, slideCount, children, ...props
   }) => (
-    <img src={children.type} {...props} />
+    <button>
+      <img className={styles.arrow} src={children.type} {...props} />
+    </button>
   )
   const [Imgs, setImgs] = useState([
     { imgLink: 'https://cdn.emiratesauction.com/media/uoyf40qsihlzlnqaeq8a62mwgl82ukm9jbh7gv4cnyw8hbpyf/images.jpg' },
@@ -33,21 +35,6 @@ function MainSlider() {
     { imgLink: 'https://cdn.emiratesauction.com/media/1sm2c3zyqitjdaxpjuhyuduldu4of69rn31fnel63iix3xd4ut/images.jpg' },
   ])
 
-  const images = [
-    {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
-  ]
-
   const handleOpen = (i) => {
     setOpen(true)
     setMainImage(i)
@@ -61,7 +48,7 @@ function MainSlider() {
   const settings1 = {
     // rtl: localStorage.getItem('lang') == 'ar',
     swipe: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     dots: false,
     slidesToShow: 1,
@@ -119,45 +106,43 @@ function MainSlider() {
         {Imgs.map((img, i) => (
           <div
             key={img}
+            className={styles.mainImageContainer}
             onClick={(e) => {
               e.preventDefault()
               handleOpen(i)
             }}
           >
-            <div style={{ position: 'relative', borderRadius: '4px' }}>
-              <img
-                alt="Vehicle"
-                src={img.imgLink}
-                className={styles.imgSliders}
-              />
-              <div
-                className={styles.overlay}
-              />
-            </div>
+            <img
+              alt="vehicle image"
+              src={img.imgLink}
+              className={styles.mainImage}
+            />
+            <div
+              className={styles.overlay}
+            />
+
           </div>
         ))}
       </Slider>
       <Slider
         {...settings2}
         className={styles.bottomSlider}
-        style={{ borderRadius: '0px 4px' }}
       >
         {Imgs.map((img, i) => (
-          <div className={styles.imgDivSmall} key={img}>
-            <img
-              onClick={() => {
-                setMainImage(i)
-                slider1.current.slickGoTo(i)
-              }}
-              alt="Vehicle Thumbnail"
-              src={img.imgLink}
-              className={styles.smallImgSliders}
-            />
-          </div>
+          <img
+            key={img}
+            onClick={() => {
+              setMainImage(i)
+              slider1.current.slickGoTo(i)
+            }}
+            alt="vehicle thumbnail"
+            src={img.imgLink}
+            className={styles.smallImgSliders}
+          />
         ))}
       </Slider>
       {open && (
-      <div className={styles.imagesContainer}>
+      <div>
         <ImageGallery
           onScreenChange={(e) => setOpen(e)}
           ref={screen}
@@ -166,7 +151,6 @@ function MainSlider() {
           isRTL={false}
           slideOnThumbnailOver
           showIndex
-          originalClass={styles.ImageGalleryMain}
           items={Imgs.map(
             (v) => (v = {
               original: v.imgLink,
