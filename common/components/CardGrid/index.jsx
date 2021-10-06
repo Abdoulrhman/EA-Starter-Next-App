@@ -54,7 +54,6 @@ function GridCard() {
         </div>
       </div>
       {/* for test */}
-      <button onClick={handleClick}>Test Lang</button>
     </>
   )
 }
