@@ -40,8 +40,8 @@ const NoAuction = () => (
               </div>
             </div>
             <div className={styles.paymentBtns}>
-              <button>Copy info</button>
-              <button>Share info</button>
+              <button type="button">Copy info</button>
+              <button type="button">Share info</button>
             </div>
           </div>
         </div>
