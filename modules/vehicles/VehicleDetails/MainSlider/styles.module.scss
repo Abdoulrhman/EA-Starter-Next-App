@@ -19,10 +19,14 @@
 		width: 100%;
 		border-radius: 4px 0px 0px 4px;
 	}
+
+	@media (max-width: 991.98px) { 
+		height: 216px;
+	}
 }
 
 .bottomSlider{
-	margin-top: -7rem;
+	margin-top: -4.15rem;
 	padding: 0px 25px;
 	width: 100%;
 	background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
@@ -36,24 +40,13 @@
 		margin: 0 10px;
 		padding: 0 5px;
 	}
-	// button{
-	// 	img{
-	// 		right: 0px !important;
-	// 	}
-	// }
 	
 }
-// .slick-slider .slick-initialized{
-// 	line-height: 0 !important;
 
-// 	.slick-next {
-//     	right: 0px !important;
-// 	}
-// 	.slick-prev {
-//     	left: 0px !important;
-// 	}
-// }
 
-// .arrow{
-// 	right: 0px !important;
-// }
+.slick-next {
+	right: 0px !important;
+}
+.slick-prev {
+	left: 0px !important;
+}

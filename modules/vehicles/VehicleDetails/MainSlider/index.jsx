@@ -18,9 +18,7 @@ function MainSlider() {
   const SlickArrowFix = ({
     currentSlide, slideCount, children, ...props
   }) => (
-    <button>
-      <img className={styles.arrow} src={children.type} {...props} />
-    </button>
+    <img src={children.type} {...props} />
   )
   const [Imgs, setImgs] = useState([
     { imgLink: 'https://cdn.emiratesauction.com/media/uoyf40qsihlzlnqaeq8a62mwgl82ukm9jbh7gv4cnyw8hbpyf/images.jpg' },
@@ -56,6 +54,14 @@ function MainSlider() {
     // asNavFor: nav2,
     easing: 'ease-out',
     ref: (slider) => (slider1.current = slider),
+    // appendDots: (dots) => (
+    //   <MagicSliderDots
+    //     dots={dots}
+    //     numDotsToShow={5}
+    //     dotWidth={30}
+    //     dotContainerClassName={`magic-dots slick-dots ${classes.dotContainer}`}
+    //   />
+    // ),
   }
 
   const settings2 = {
@@ -64,7 +70,7 @@ function MainSlider() {
     slidesToShow: 5,
     swipeToSlide: false,
     focusOnSelect: true,
-    // arrows: true,
+    arrows: true,
     easing: 'ease-out',
     infinite: false,
     ref: (slider) => (slider2.current = slider),
@@ -78,26 +84,6 @@ function MainSlider() {
         <LeftArrow />
       </SlickArrowFix>
     ),
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 960,
-        settings: {
-          slidesToShow: 5,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 5,
-        },
-      },
-    ],
   }
 
   return (

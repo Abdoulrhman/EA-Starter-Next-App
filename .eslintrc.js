@@ -19,12 +19,13 @@ module.exports = {
     'linebreak-style': 0,
     'no-console': 'off',
     'no-nested-ternary': 'off',
-    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-props-no-spreading': 'off', // edit
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // Best Practices
     eqeqeq: 'error',
     'no-invalid-this': 'error',
-    'no-return-assign': 'error',
+    'no-return-assign': 'off', // edit
+    'no-param-reassign': 'off', // edit
     'no-unused-expressions': ['error', { allowTernary: true }],
     'no-useless-concat': 'error',
     'no-useless-return': 'error',
