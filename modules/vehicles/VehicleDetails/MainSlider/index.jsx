@@ -1,12 +1,12 @@
 import React, { useState, useRef } from 'react'
 import Slider from 'react-slick'
-// import useMediaQuery from '@mui/material/useMediaQuery'
+import useMediaQuery from '@mui/material/useMediaQuery'
 import MagicSliderDots from 'react-magic-slider-dots'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import ImageGallery from 'react-image-gallery'
+import 'react-magic-slider-dots/dist/magic-dots.css'
 import styles from './styles.module.scss'
-
 // import RightArrow from '/assets/icons/arrow-right.svg'
 // import LeftArrow from '/assets/icons/arrow-left.svg'
 
@@ -18,7 +18,7 @@ function MainSlider() {
   const slider2 = useRef()
   const RightArrow = '/assets/icons/arrow-right.svg'
   const LeftArrow = '/assets/icons/arrow-left.svg'
-  //   const matches = useMediaQuery('(min-width:500px)')
+  const matches = useMediaQuery('(min-width:500px)')
   const SlickArrowFix = ({
     currentSlide, slideCount, children, ...props
   }) => (
@@ -70,6 +70,7 @@ function MainSlider() {
               dots={dots}
               numDotsToShow={5}
               dotWidth={30}
+              dotContainerClassName={`magic-dots slick-dots ${styles.dotContainer}`}
             />
           ),
         },
@@ -124,7 +125,7 @@ function MainSlider() {
           </div>
         ))}
       </Slider>
-      {/* {matches && (
+      {matches && (
       <Slider
         {...settings2}
         className={styles.bottomSlider}
@@ -142,7 +143,7 @@ function MainSlider() {
           />
         ))}
       </Slider>
-      )} */}
+      )}
       {open && (
       <div>
         <ImageGallery

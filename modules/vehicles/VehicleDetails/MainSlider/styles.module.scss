@@ -50,7 +50,13 @@
 	
 }
 
-
-.slick-dots{
-	bottom: 40px;
+.dotContainer{
+	position: absolute !important;
+	bottom: 17px !important;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
 }
+
+// .magic-dots.slick-dots li.slick-active button:before{
+// 	color: '#fff !important';
+// }
