@@ -19,9 +19,7 @@ function MainSlider() {
   const RightArrow = '/assets/icons/arrow-right.svg'
   const LeftArrow = '/assets/icons/arrow-left.svg'
   const matches = useMediaQuery('(min-width:500px)')
-  const SlickArrowFix = ({
-    currentSlide, slideCount, children, ...props
-  }) => (
+  const SlickArrowFix = ({ children, ...props }) => (
     <img src={children.type} {...props} />
   )
   const [Imgs, setImgs] = useState([
