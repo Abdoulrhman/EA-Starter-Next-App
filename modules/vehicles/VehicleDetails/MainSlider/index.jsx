@@ -1,9 +1,12 @@
 import React, { useState, useRef } from 'react'
 import Slider from 'react-slick'
+// import useMediaQuery from '@mui/material/useMediaQuery'
+import MagicSliderDots from 'react-magic-slider-dots'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import ImageGallery from 'react-image-gallery'
 import styles from './styles.module.scss'
+
 // import RightArrow from '/assets/icons/arrow-right.svg'
 // import LeftArrow from '/assets/icons/arrow-left.svg'
 
@@ -15,6 +18,7 @@ function MainSlider() {
   const slider2 = useRef()
   const RightArrow = '/assets/icons/arrow-right.svg'
   const LeftArrow = '/assets/icons/arrow-left.svg'
+  //   const matches = useMediaQuery('(min-width:500px)')
   const SlickArrowFix = ({
     currentSlide, slideCount, children, ...props
   }) => (
@@ -45,23 +49,32 @@ function MainSlider() {
 
   const settings1 = {
     // rtl: localStorage.getItem('lang') == 'ar',
-    swipe: false,
+    swipe: true,
     arrows: false,
     infinite: true,
     dots: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    speed: 500,
     // asNavFor: nav2,
     easing: 'ease-out',
     ref: (slider) => (slider1.current = slider),
-    // appendDots: (dots) => (
-    //   <MagicSliderDots
-    //     dots={dots}
-    //     numDotsToShow={5}
-    //     dotWidth={30}
-    //     dotContainerClassName={`magic-dots slick-dots ${classes.dotContainer}`}
-    //   />
-    // ),
+    responsive: [
+      {
+        breakpoint: 500,
+        settings: {
+          dots: true,
+          arrows: false,
+          appendDots: (dots) => (
+            <MagicSliderDots
+              dots={dots}
+              numDotsToShow={5}
+              dotWidth={30}
+            />
+          ),
+        },
+      },
+    ],
   }
 
   const settings2 = {
@@ -84,10 +97,11 @@ function MainSlider() {
         <LeftArrow />
       </SlickArrowFix>
     ),
+
   }
 
   return (
-    <div style={{ width: '600px', margin: '30px' }}>
+    <div>
       <Slider {...settings1}>
         {Imgs.map((img, i) => (
           <div
@@ -110,6 +124,7 @@ function MainSlider() {
           </div>
         ))}
       </Slider>
+      {/* {matches && (
       <Slider
         {...settings2}
         className={styles.bottomSlider}
@@ -127,6 +142,7 @@ function MainSlider() {
           />
         ))}
       </Slider>
+      )} */}
       {open && (
       <div>
         <ImageGallery

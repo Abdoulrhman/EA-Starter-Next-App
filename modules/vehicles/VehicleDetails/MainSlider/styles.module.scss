@@ -40,13 +40,17 @@
 		margin: 0 10px;
 		padding: 0 5px;
 	}
+
+	& .slick-next {
+	right: 0px !important;
+	}
+	& .slick-prev {
+		left: 0px !important;
+	}
 	
 }
 
 
-.slick-next {
-	right: 0px !important;
-}
-.slick-prev {
-	left: 0px !important;
+.slick-dots{
+	bottom: 40px;
 }
