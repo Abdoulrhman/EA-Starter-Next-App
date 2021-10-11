@@ -8,6 +8,8 @@ import Specifications from '../../modules/vehicles/VehicleDetails/Specifications
 import MainSlider from '../../modules/vehicles/VehicleDetails/MainSlider'
 import MainSection from '../../modules/home/Main'
 import Intro from '../../modules/home/Intro'
+import WorkSteps from '../../modules/home/howItWorks'
+import DownloadApp from '../../modules/home/downloadApp'
 
 function index() {
   return (
@@ -22,6 +24,8 @@ function index() {
       {/* <Gallery /> */}
       <MainSection />
       <Intro />
+      <WorkSteps />
+      <DownloadApp />
     </div>
   )
 }

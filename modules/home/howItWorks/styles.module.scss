@@ -1,3 +1,7 @@
+.bgWrapper{
+	background: radial-gradient(closest-side at 50% 0%, rgba(251, 253, 253, 1) 0%, rgba(245, 249, 250, 1) 100%);
+}
+
 .container{
 	padding: 100px 0;
 	margin: 0 auto;
@@ -28,46 +32,42 @@
 			background-color: #E51937;
 		}
 	}
-
+	
 	.cardsContainer{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 30px;
+		gap: 80px;
 		.cardItem{
-			background-color: #fff;
-			box-shadow: 0px 2px 32px #656F7C29;
-			border-radius: 10px;
-			position: relative;
+			text-align: center;
 			width: 33.33%;
-			.iconContainer{
-				width: 90px;
-				height: 90px;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.cardIcon{
+				width: 100px;
+				height: 100px;
 				border-radius: 50%;
-				background: rgba(229, 25, 55, .85);
+				border: 2px dashed rgba(229, 25, 55, 1);
+				box-shadow: 0px 2px 32px rgba(224, 236, 238, 1);
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				position: absolute;
-				top: -45px;
-				left: 35px;
+				margin:0 auto;
 			}
 			.cardContent{
-				padding: 80px 35px 42px 35px;
+				margin-top: 26px;
 				h3{
-					font-size: 24px;
+					font-size: 21px;
 					font-weight: 500;
 					color: #2D2D2DCC;
-					margin-bottom: 17px;
+					margin-bottom: 21px;
 				}
-				ul{
-					list-style: initial;
-					li{
-						color: rgba(45, 45, 45, 0.6);
-						font-size: 21px;
-						margin-inline-start: 23px;
-						margin-bottom: 5px;
-					}
+				p{
+					font-size: 18px;
+					color: rgba(45, 45, 45, 0.6);
 				}
 			}
 		}
