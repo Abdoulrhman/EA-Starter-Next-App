@@ -16,6 +16,7 @@ module.exports = {
   plugins: ['react'],
   rules: {
     ...a11yOff,
+    'linebreak-style': 0,
     'no-console': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // Best Practices
