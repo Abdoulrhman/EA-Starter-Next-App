@@ -6,6 +6,8 @@ import Description from '../../modules/vehicles/VehicleDetails/Description'
 import Documents from '../../modules/vehicles/VehicleDetails/Documents'
 import Specifications from '../../modules/vehicles/VehicleDetails/Specifications'
 import MainSlider from '../../modules/vehicles/VehicleDetails/MainSlider'
+import MainSection from '../../modules/home/Main'
+import Intro from '../../modules/home/Intro'
 
 function index() {
   return (
@@ -16,8 +18,10 @@ function index() {
       {/* <Description /> */}
       {/* <Documents /> */}
       {/* <Specifications /> */}
-      <MainSlider />
+      {/* <MainSlider /> */}
       {/* <Gallery /> */}
+      <MainSection />
+      <Intro />
     </div>
   )
 }
