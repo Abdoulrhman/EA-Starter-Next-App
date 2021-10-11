@@ -1,26 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import styles from './styles.module.scss';
+import React, { useEffect, useState } from 'react'
+import styles from './styles.module.scss'
 
-function CardTags({ dir }) {
-  const [tags, setTags] = useState([
-    {
-      Image:
-        'https://cdn.emiratesauction.com/static/AppsAssets/Tags/combinedShape@3x.png?v=1',
-      TextColor: '#3f3f3f',
-      BGColor: '#eeeeee',
-      Id: 0,
-      Title: '3,878 Km',
-    },
-  ]);
+function CardTags({ dir, Tags }) {
   const tagImageDimensions = {
     width: '15px',
     height: '15px',
-  };
+  }
 
   return (
     <div style={{ direction: dir }} className={styles.productStatus}>
-      {tags &&
-        tags.map((tag, indx) => (
+      {Tags
+        && Tags.map((tag, indx) => (
           <label
             key={indx}
             style={{
@@ -42,12 +32,12 @@ function CardTags({ dir }) {
               // className={locale == 'en' ? styles.tagImg : styles.tagImgAr}
               className={dir === 'ltr' ? styles.tagImg : styles.tagImgAr}
               src={tag?.Image}
-            ></img>
+            />
             <span>{tag?.Title}</span>
           </label>
         ))}
     </div>
-  );
+  )
 }
 
-export default CardTags;
+export default CardTags

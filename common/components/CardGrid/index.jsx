@@ -7,7 +7,8 @@ import Favourite from './Favourite'
 import Lot from './Lot'
 import Menu from './Menu'
 
-function GridCard() {
+function GridCard({ vehicleData }) {
+  const { Tags } = vehicleData
   const [lang, setLang] = useState(true)
   const handleClick = () => {
     setLang(!lang)
@@ -37,12 +38,12 @@ function GridCard() {
         </div>
         <div className={styles.cardContent}>
           <h3 className={lang ? styles.cardTitle : styles.cardTitleAr}>
-            2021 Porsche Cayen
+            {vehicleData?.Title}
           </h3>
-          <CardTags dir={lang ? 'ltr' : 'rtl'} />
+          <CardTags Tags={Tags} dir={lang ? 'ltr' : 'rtl'} />
           <p className={lang ? styles.cardPrice : styles.cardPriceAr}>
-            <span>AED</span>
-            243.000
+            <span>{vehicleData?.Currency}</span>
+            {vehicleData?.CurrentPrice}
           </p>
           <div
             style={{ direction: lang ? 'ltr' : 'rtl' }}
@@ -54,7 +55,7 @@ function GridCard() {
         </div>
       </div>
       {/* for test */}
-      <button onClick={handleClick}>Test Lang</button>
+      {/* <button onClick={handleClick}>Test Lang</button> */}
     </>
   )
 }

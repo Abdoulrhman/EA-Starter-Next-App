@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styles from './styles.module.scss';
+import React, { useState } from 'react'
+import styles from './styles.module.scss'
 
 function CardFooter({ dir }) {
   return (
@@ -13,7 +13,7 @@ function CardFooter({ dir }) {
         <p className={styles.footerText}>14d:11h:11m</p>
       </div>
     </div>
-  );
+  )
 }
 
-export default CardFooter;
+export default CardFooter
