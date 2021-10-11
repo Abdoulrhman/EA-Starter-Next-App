@@ -16,6 +16,8 @@
     "@mui/material": "^5.0.2",
     "axios": "^0.21.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
+    "jquery": "^3.6.0",
+    "n": "^7.5.0",
     "next": "11.1.2",
     "prop-types": "^15.7.2",
     "react": "17.0.2",
@@ -27,19 +29,21 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "sass": "^1.42.1"
+    "sass": "^1.42.1",
+    "stable": "^0.1.8"
   },
   "devDependencies": {
     "@types/react": "17.0.24",
-    "autoprefixer": "^10.3.6",
+    "autoprefixer": "^10.3.7",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.26.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "lint-staged": "^11.1.2",
-    "postcss": "^8.3.8",
+    "postcss": "^8.3.9",
     "prettier": "^2.4.1",
+    "sass-loader": "^10.2.0",
     "tailwindcss": "^2.2.16"
   }
 }
