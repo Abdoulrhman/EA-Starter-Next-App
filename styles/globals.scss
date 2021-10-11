@@ -1,13 +1,19 @@
 /* ./styles/globals.css */
-@tailwind base;
+// @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "SPPro";
-  src: url("/public/fonts/sf-pro/SFPRODISPLAYREGULAR.OTF");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
+
+
+// init base
+@import './helpers/helper_variables';
+@import './helpers/helper_base';
+
+
+//- layout
+@import '../layouts/Header/Header.scss';
+@import '../layouts/Footer/Footer.scss';
+@import '../layouts/MobileMenu/MobileMenu.scss';
+
+
 

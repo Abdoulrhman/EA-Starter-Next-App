@@ -1,0 +1,114 @@
+.megamenu-contain {
+    position: fixed;
+    top: 121px;
+    bottom: 0;
+    left: -100%;
+    z-index: 1001;
+    width: 100%;
+    height: calc(100vh - 121px);
+    transition: all .3s ease-in-out;
+    background-color: #f1f1f1;
+    color: #2d2d2d;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    @media (max-width: 768px) {
+        height: calc(100vh - 55px);
+        top: 55px;
+    }
+    &.open {
+        left: 0;
+    }
+
+    .megamenu-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 96px;
+
+    }
+    .megamenu-head {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 16px;
+    }
+    .megamenu-body {
+        padding: 16px;
+        .megamenu-body-head {
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+        .megamenu-user {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .user-img {
+                margin-bottom: 8px;
+            }
+        }
+        .megamenu-data-list {
+            margin-top: 32px;
+            ul {
+                li {
+                    padding: 10px 12px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    margin-bottom: 12px;
+                    // &.active {
+                    //     border: 1px solid tomato;
+                    // }
+                    span {
+                        font-size: 13px;
+                    }
+                }
+                .have-nested {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .nested-head {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        &.active {
+                            .dropdown-icon {
+                                transform: rotateZ(0deg);
+                            }
+                        }
+                        .dropdown-icon {
+                            transition: all .3s ease-in-out;
+                            width: 12px;
+                            transform: rotateZ(-90deg);
+
+                        }
+                    }
+                    .nested-body {
+                        display: none;
+                        margin-top: 16px;
+                        .nested-body-item {
+                            padding-bottom: 6px;
+                            margin-bottom: 6px;
+                            border-bottom: 1px solid #f2f2f2;
+                            margin-left: 24px;
+                            &:last-child {
+                                border: 0;
+                            }
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
