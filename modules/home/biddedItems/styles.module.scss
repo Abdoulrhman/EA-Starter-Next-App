@@ -1,0 +1,39 @@
+.container{
+	padding: 100px 0;
+	margin: 0 auto;
+	width: 75%;
+	header{
+		text-align: center;
+		position: relative;
+		margin-bottom: 50px;
+		h2{
+			font-size: 38px;
+			font-weight: 600;
+			color: #2D2D2D;
+			margin-bottom: 17px;
+		}
+		p{
+			font-size: 18px;
+			color: #2D2D2D;
+		}
+
+		&::after{
+			content: '';
+			position: absolute;
+			bottom: -18px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 65px;
+			height: 3px;
+			background-color: #E51937;
+		}
+	}
+	.contentContainer{
+		.head{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin-bottom: 50px;
+		}
+	}
+}

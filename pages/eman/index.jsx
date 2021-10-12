@@ -10,6 +10,8 @@ import MainSection from '../../modules/home/Main'
 import Intro from '../../modules/home/Intro'
 import WorkSteps from '../../modules/home/howItWorks'
 import DownloadApp from '../../modules/home/downloadApp'
+import BiddedItems from '../../modules/home/biddedItems'
+import Categories from '../../modules/home/categories'
 
 function index() {
   return (
@@ -26,6 +28,8 @@ function index() {
       <Intro />
       <WorkSteps />
       <DownloadApp />
+      <BiddedItems />
+      <Categories />
     </div>
   )
 }

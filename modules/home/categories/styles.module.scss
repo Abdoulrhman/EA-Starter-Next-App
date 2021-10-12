@@ -1,0 +1,155 @@
+.container{
+	padding: 100px 0;
+	margin: 0 auto;
+	width: 75%;
+	header{
+		text-align: center;
+		position: relative;
+		margin-bottom: 60px;
+		h2{
+			font-size: 38px;
+			font-weight: 600;
+			color: #2D2D2D;
+			margin-bottom: 17px;
+		}
+		p{
+			font-size: 18px;
+			color: #2D2D2D;
+		}
+
+		&::after{
+			content: '';
+			position: absolute;
+			bottom: -18px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 65px;
+			height: 3px;
+			background-color: #E51937;
+		}
+	}
+	.category{
+		.selectCategory{
+			.headTitle{
+				font-size: 24px;
+				color: #2D2D2D;
+				font-weight: 500;
+				margin-bottom: 30px;
+			}
+			.selectCategoryContainer{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 15px;
+				margin-bottom: 50px;
+				.selectCategoryItem{
+					border: 1px solid #CBCBCB;
+					border-radius: 10px;
+					width: 15%;
+					padding: 15px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					.iconContainer{
+						width: 75px;
+						height: 75px;
+						border-radius: 50%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+					.itemTitle{
+						font-size: 18px;
+						font-weight: 500;
+						color: #424A64;
+					}
+					.itemsubTitle{
+						font-size: 14px;
+						color: rgba(123, 128, 145, 0.8);
+					}
+				}
+			}
+		}
+		.platesNumbers{
+			.headTitle{
+				font-size: 24px;
+				color: #2D2D2D;
+				font-weight: 500;
+				margin-bottom: 8px;
+			}
+			.headsubTitle{
+				font-size: 18px;
+				color: #2D2D2D;
+				margin-bottom: 30px;
+			}
+			.platesNumbersContainer{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 90px;
+				.platesNumbersItem{
+					width: 15%;
+
+					.logoContainer{
+						position: relative;
+						
+						.logo{
+							width: 76px;
+							height: 76px;
+							border-radius: 50%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							box-shadow: 0px 8px 16px #3F3F3F29;
+							margin: 0 auto;
+						}
+						.label{
+							background-color: #E51937;
+							border-radius: 10px;
+							padding: 2px 8px;
+							display: inline-block;
+							position: absolute;
+							bottom: -10px;
+							left: 50%;
+							transform: translateX(-50%);
+							p{
+								font-size: 10px;
+								color: #fff;
+							}
+						}
+					}
+					.content{
+						margin-top: 10px;
+						text-align: center;
+						.plateTitle{
+							font-size: 14px;
+							color: #404040;
+						}
+						.platesubTitle{
+							font-size: 12px;
+							color: #828E99;
+						}
+					}
+				}
+			}
+		
+		}
+	}
+}
+
+.platesNumberSlider{
+	background: radial-gradient(closest-side at 60% 0%, #FDFDFD 0%, #F5F9FA 100%);
+	padding: 50px 0;
+	.plateNumberCard{
+		box-shadow: 0px 2px 17px #3F3F3F1A;
+		border-radius: 5px;
+		margin: 0 auto;
+		width: 75%;
+		.cardContent{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
