@@ -4,7 +4,7 @@ import ProvidedBy from '../ProvidedBy'
 import SectionLayout from '../SectionLayout'
 import styles from './styles.module.scss'
 
-const TermsAndConditions = props => {
+const TermsAndConditions = (props) => {
   const { Title, OptionGroups, EnableCollapse, Collapsed } = props.SectionData
 
   const [terms, setTerms] = useState({
@@ -15,7 +15,6 @@ const TermsAndConditions = props => {
     Id: 11,
     Title: 'الشروط والأحكام',
   })
-  console.log(terms.OptionGroups)
   return (
     <>
       <SectionLayout

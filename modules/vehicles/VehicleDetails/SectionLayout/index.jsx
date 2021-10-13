@@ -7,13 +7,21 @@ function SectionLayout(props) {
   const [collapsed, setCollapsed] = useState(Collapsed)
   return (
     <div className={styles.container}>
-      <div className={styles.head} onClick={() => setCollapsed(!collapsed)}>
+      <div
+        className={styles.head}
+        onClick={() => (EnableCollapse ? setCollapsed(!collapsed) : '')}
+      >
         <p className={styles.headTitle}>{Title}</p>
-        {EnableCollapse && !collapsed ? (
-          <img src="/assets/icons/arrow-up.svg" alt="arrow" />
-        ) : (
-          <img src="/assets/icons/arrow-right.svg" alt="arrow" />
-        )}
+        {EnableCollapse ? (
+          <img
+            src={
+              !collapsed
+                ? '/assets/icons/arrow-up.svg'
+                : '/assets/icons/arrow-right.svg'
+            }
+            alt="arrow"
+          />
+        ) : null}
       </div>
       <Divider width="100%" height="1px" bgColor="#EDEDED" margin="" />
       {!collapsed && props.children}

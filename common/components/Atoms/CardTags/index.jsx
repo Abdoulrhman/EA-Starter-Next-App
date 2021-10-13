@@ -33,7 +33,6 @@ function CardTags() {
     width: '12px',
     height: '12px',
   }
-  console.log(setTags)
 
   return (
     <div className={styles.productStatus}>

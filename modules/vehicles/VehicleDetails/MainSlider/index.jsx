@@ -24,9 +24,7 @@ function MainSlider(props) {
   const SlickArrowFix = ({ currentSlide, slideCount, children, ...props }) => (
     <img src={children.type} {...props} />
   )
-  console.log(props)
   const imagesArray = props.Images.OptionGroups.map((obj) => obj.Images[0])
-  console.log(imagesArray)
   const [Imgs, setImgs] = useState(imagesArray)
 
   const handleOpen = (i) => {
@@ -36,8 +34,6 @@ function MainSlider(props) {
       screen.current.fullScreen()
     }, 0)
   }
-
-  console.log(setImgs)
 
   const settings1 = {
     // rtl: localStorage.getItem('lang') == 'ar',

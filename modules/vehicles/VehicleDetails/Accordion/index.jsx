@@ -8,12 +8,16 @@ function Accordion(props) {
   return (
     <div className={styles.auctionDetailsBody}>
       <div className={styles.auctionAccordion}>
-        <div className={styles.auctionAccordionHeader}>
+        <div
+          className={styles.auctionAccordionHeader}
+          onClick={() => setTermCollapsed(!termCollapse)}
+        >
           <h4>{Question}</h4>
-          <img
-            src="assets/icons/minus.svg"
-            onClick={() => setTermCollapsed(!termCollapse)}
-          />
+          {termCollapse ? (
+            <img src="/assets/icons/minus.svg" />
+          ) : (
+            <img src="/assets/icons/plus.svg" />
+          )}
         </div>
         {termCollapse && props.children}
       </div>

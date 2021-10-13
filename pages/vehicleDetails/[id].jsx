@@ -15,11 +15,10 @@ import TermsAndConditions from '../../modules/vehicles/VehicleDetails/TermsAndCo
 import Gallery from '../../modules/vehicles/VehicleDetails/Gallery/Gallery'
 import INSPECTIONLOCATION from '../../modules/vehicles/VehicleDetails/INSPECTIONLOCATION/INSPECTIONLOCATION'
 import DELIVERY from '../../modules/vehicles/VehicleDetails/DELIVERY/DELIVERY'
-
-// import VehicleDetailsApi from '../../network/api/vehicleDetails'
+// import { getVehicleDetails } from '../../network/api/vehicleDetails'
 
 function VehicleDetailsPage(props) {
-  console.log(props)
+  // console.log(props)
 
   const {
     Lot,
@@ -177,7 +176,12 @@ function VehicleDetailsPage(props) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
+  console.log(context)
+  const { id } = context.params
+  // const response = await getVehicleDetails(id, '')
+  // console.log(response)
+
   // try {
   //   const response = await VehicleDetailsApi.vehicleDetails(id, source)
   //   console.log({ response })
@@ -189,7 +193,7 @@ export async function getServerSideProps() {
     {
       method: 'POST',
       body: JSON.stringify({
-        Id: 222488,
+        Id: id,
         Source: '',
         Lang: 'en',
       }),
@@ -220,6 +224,16 @@ export async function getServerSideProps() {
       termdata,
     },
   }
+
+  // if (!response) {
+  //   return {
+  //     notFound: true,
+  //   }
+  // }
+
+  // return {
+  //   props: { vehicleDetails: response.data, termdata },
+  // }
 }
 
 export default VehicleDetailsPage
