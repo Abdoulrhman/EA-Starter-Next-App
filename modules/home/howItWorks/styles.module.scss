@@ -1,11 +1,11 @@
-.bgWrapper{
+.WorkStepsBgWrapper{
 	background: radial-gradient(closest-side at 50% 0%, rgba(251, 253, 253, 1) 0%, rgba(245, 249, 250, 1) 100%);
 }
 
-.container{
+.WorkStepsContainer{
 	padding: 100px 0;
 	margin: 0 auto;
-	width: 75%;
+	width: 85%;
 	header{
 		text-align: center;
 		position: relative;
@@ -36,15 +36,14 @@
 	.cardsContainer{
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: stretch;
 		gap: 80px;
 		.cardItem{
 			text-align: center;
-			width: 33.33%;
-			padding: 20px;
+			flex: 0 0 30.33%;
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: flex-start;
 			align-items: center;
 			.cardIcon{
 				width: 100px;
@@ -70,6 +69,15 @@
 					color: rgba(45, 45, 45, 0.6);
 				}
 			}
+
+			@media (max-width: 767.98px) { 
+				width: 100%;	
+			}
+		}
+
+		@media (max-width: 767.98px) { 
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 }

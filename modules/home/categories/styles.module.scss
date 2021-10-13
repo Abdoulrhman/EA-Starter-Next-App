@@ -1,7 +1,7 @@
 .container{
 	padding: 100px 0;
 	margin: 0 auto;
-	width: 75%;
+	width: 85%;
 	header{
 		text-align: center;
 		position: relative;
@@ -69,7 +69,13 @@
 						color: rgba(123, 128, 145, 0.8);
 					}
 				}
+
+				@media (max-width: 767.98px) { 
+					flex-direction: column;
+				}
 			}
+
+			
 		}
 		.platesNumbers{
 			.headTitle{
@@ -131,6 +137,10 @@
 							color: #828E99;
 						}
 					}
+				}
+
+				@media (max-width: 767.98px) { 
+					flex-direction: column;
 				}
 			}
 		

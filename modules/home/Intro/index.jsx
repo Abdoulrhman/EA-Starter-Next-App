@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 
 function Intro() {
   return (
-    <div className={styles.container}>
+    <div className={styles.introContainer}>
       <header>
         <h2>Who we are</h2>
         <p>Emirates Auctions is an electronic platform that provides services to suppliers and buyers</p>
@@ -18,7 +18,7 @@ function Intro() {
             <ul>
               <li>Customers have easy access to the auction</li>
               <li>Preferred strategic partner for all courts, governments and banks</li>
-              <li>Platform that maximizes supplier sales revenue and eliminates pre- sale agents risk</li>
+
             </ul>
           </div>
         </div>

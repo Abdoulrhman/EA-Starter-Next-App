@@ -3,8 +3,8 @@ import styles from './styles.module.scss'
 
 function WorkSteps() {
   return (
-    <div className={styles.bgWrapper}>
-      <div className={styles.container}>
+    <div className={styles.WorkStepsBgWrapper}>
+      <div className={styles.WorkStepsContainer}>
         <header>
           <h2>How it works</h2>
           <p>It’s extremely simple. Just join, set your bidding limit and start bidding.</p>

@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 
 function DownloadApp() {
   return (
-    <div className={styles.container}>
+    <div className={styles.downloadAppContainer}>
       <header>
         <h2>Keep Bidding!</h2>
         <p>Find us on all platforms, for your convenience.</p>
