@@ -10,7 +10,7 @@ function MainSection() {
         <div className={styles.inputContainer}>
           <input type="search" placeholder="Search..." />
         </div>
-        <button className={styles.btnSearch}>Search</button>
+        <button className={styles.btnSearch} type="button">Search</button>
       </div>
     </main>
   )
