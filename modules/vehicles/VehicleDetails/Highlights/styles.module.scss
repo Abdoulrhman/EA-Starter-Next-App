@@ -1,0 +1,42 @@
+// .container{
+//     border-radius: 4px;
+//     box-shadow: 0 2px 12px 0 rgba(215, 221, 240, 0.49);
+//     background-color: #fff;
+//     margin-bottom: 30px;
+
+    // @media (max-width: 991.98px) { 
+    //      width: 330px;
+    //  }
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+
+        .headTitle{
+            color: #404040;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    }
+
+    .contentContainer{
+        padding: 30px;
+
+        .optionTitle{
+            color: #828E99;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .optionsContainer{
+            list-style: initial;
+            .optionItem{
+                color: #404040;
+                font-size: 14px;
+                margin-inline-start: 18px;
+            }
+        }
+
+    }
+// }

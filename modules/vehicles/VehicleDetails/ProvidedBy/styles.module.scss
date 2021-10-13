@@ -1,0 +1,25 @@
+.container {
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(215, 221, 240, 0.49);
+  background-color: #fff;
+  margin-bottom: 30px;
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    .headTitle {
+      color: #404040;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .headValue {
+      color: #e51937;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}

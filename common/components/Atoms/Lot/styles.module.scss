@@ -1,0 +1,26 @@
+.container{
+    background-color: rgba(66, 74, 100, 0.8);
+    padding: 4px;
+    border-radius: 0px 2px 2px 0px;
+  
+    p{
+        font-size: 11px;
+        color: #fff;
+    }
+}
+
+.positionStyle{
+    position:absolute;
+    bottom:12px;
+    left:0px;
+}
+
+html[dir="rtl"]{
+    .container{
+        border-radius: 2px 0px 0px 2px;
+    }
+    .positionStyle{
+        left:auto;
+        right: 0;
+    }
+}

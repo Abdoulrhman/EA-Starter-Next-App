@@ -1,0 +1,42 @@
+.wrapper {
+  width: 80%;
+  background-color: #fff;
+  float: right;
+  .auctionGrid {
+    display: flex;
+    justify-content: space-between;
+    .auctionDetails {
+      box-shadow: 0px 5px 24px #656f7c29;
+      border-radius: 8px;
+      flex: 1;
+      padding-bottom: 15px;
+      .auctionDetailsHeader {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid #ededed;
+        margin-bottom: 10px;
+        padding: 30px 22px 30px 22px;
+
+        h4 {
+          color: #404040;
+          text-transform: uppercase;
+          margin: 0;
+          font-weight: bold;
+        }
+      }
+      .auctionDetailsBody {
+        padding: 0px 22px 0px 22px;
+
+        .auctionTerms {
+          p {
+            color: #828e99;
+            text-transform: capitalize;
+            font-size: 14px;
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+  }
+}

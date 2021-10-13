@@ -1,0 +1,35 @@
+// var
+$redColor: #e51937;
+.wrapper {
+  width: 80%;
+  background-color: #fff;
+  float: right;
+  border-radius: 4px;
+  margin: 10px 0;
+  .results {
+    padding: 50px 0px;
+    text-align: center;
+    background-color: #fafbfb;
+    h3 {
+      font-size: 24px;
+      color: #e51937;
+      font-weight: bold;
+      margin:24px 0 ;
+    }
+    p {
+      color: #77797e;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.56;
+      font-stretch: normal;
+      letter-spacing: normal;
+      margin: 16px;
+    }
+    .clear {
+      color: #e51937;
+      font-size: 16px;
+      text-decoration: underline;
+    }
+  }
+}

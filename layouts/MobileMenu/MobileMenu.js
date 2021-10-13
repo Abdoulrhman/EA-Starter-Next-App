@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import ProfileImg from '../../public/assets/icons/profile-img-enhance.jpg';
 import HomeIcon from '../../public/assets/icons/home.png';
 import PhoneIcon from '../../public/assets/icons/down-arrow.png';
-import $ from "jquery";
+// import $ from "jquery";
 
 function MobileMenu({megaMenuRef}) {
     useEffect(() => {
@@ -13,8 +13,8 @@ function MobileMenu({megaMenuRef}) {
     }, [])
 
     const hanldeNested = (e) => {
-        $(e.target).next().slideToggle()
-        $(e.target).toggleClass('active')
+        // $(e.target).next().slideToggle()
+        // $(e.target).toggleClass('active')
     }
 
     return (

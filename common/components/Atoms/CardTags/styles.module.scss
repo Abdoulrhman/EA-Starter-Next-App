@@ -1,0 +1,24 @@
+.productStatus{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+
+    .labelStatus{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width:  63px;
+        min-height: 16px;
+        border-radius: 2px;
+        padding: 4px;
+        margin-inline-end: 4px;
+        font-size: 10px;
+        color: #404040;
+        margin-bottom: 8px;
+    }
+    .tagImg{
+        margin-inline-end: 3px;
+    }
+}
+
+

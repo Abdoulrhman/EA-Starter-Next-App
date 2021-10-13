@@ -1,0 +1,412 @@
+.auctionAlerts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .modal_content {
+    padding: 30px 0 70px 0;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    outline: 0;
+    width: 426px;
+    .modal_header {
+      padding: 0 30px 0 30px;
+      border-top-left-radius: 0.3rem;
+      border-top-right-radius: 0.3rem;
+
+      .modal_header_img {
+        float: right;
+        cursor: pointer;
+      }
+      .modal_header_imgAr {
+        float: left;
+        cursor: pointer;
+      }
+    }
+    .modal_body {
+      padding: 0 50px;
+      h3 {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 16px 0;
+      }
+      p {
+        color: #828e99;
+        font-size: 12px;
+      }
+      .checkmark {
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        height: 24px;
+        width: 24px;
+        background-color: #fff;
+        border: 1px solid #b7bfc7;
+        padding: 1px;
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 4px;
+          top: 4px;
+          width: 14px;
+          height: 14px;
+          background: red;
+          border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px;
+        }
+
+        label {
+          font-size: 0.875rem;
+        }
+      }
+      .check {
+        border-bottom: 1px solid #eeeeee;
+        padding: 15px 0;
+        display: flex;
+        &:last-of-type {
+          margin-bottom: 25px;
+        }
+        .container {
+          input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked {
+              ~ {
+                .checkmark {
+                  background-color: #fff;
+                  width: 24px;
+                  height: 24px;
+                  border-radius: 2px;
+                  top: 5px;
+                  left: 0px;
+                  &:after {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+            input {
+              ~ {
+                .checkmark {
+                  background-color: #fff;
+                }
+              }
+            }
+          }
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 0.875rem;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        .info {
+          p {
+            margin: 0;
+            color: #404040;
+            font-size: 16px;
+          }
+          label {
+            color: #828e99;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .checkList {
+      list-style: none;
+      padding: 0;
+      .checkmark {
+        position: absolute;
+        top: 3px !important;
+        left: 0px;
+        height: 16px !important;
+        width: 16px !important;
+        background-color: #fff;
+        border: 1px solid #b7bfc7;
+        padding: 1px;
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 2px !important;
+          top: 2px !important;
+          width: 10px !important;
+          height: 10px !important;
+          background: red;
+          border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px;
+        }
+
+        label {
+          font-size: 0.875rem;
+        }
+      }
+      li {
+        display: flex;
+        margin: 8px 0;
+      }
+      span {
+        color: #828e99;
+        font-size: 14px;
+      }
+      .containerAr {
+        padding-right: 1.5rem !important;
+        padding-left: 0;
+        .checkmark {
+          position: absolute;
+          top: 5px;
+          left: 0px;
+          height: 14px;
+          width: 14px;
+          background-color: #fff;
+          border: 1px solid #b7bfc7;
+          padding: 1px;
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 4px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            background: red;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+          }
+
+          label {
+            font-size: 0.875rem;
+          }
+        }
+      }
+      .container {
+        padding-left: 1.5rem !important;
+        .checkmark {
+          position: absolute;
+          top: 5px;
+          left: 0px;
+          height: 14px;
+          width: 14px;
+          background-color: #fff;
+          border: 1px solid #b7bfc7;
+          padding: 1px;
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 4px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            background: red;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+          }
+
+          label {
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+
+    .auctionBtn {
+      button {
+        color: #fff;
+        font-size: 14px;
+        min-width: 215px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-stretch: normal;
+        border-radius: 54px;
+        letter-spacing: normal;
+        background-color: #404040;
+        margin-top: 70px;
+        margin: auto;
+        display: block;
+        cursor: pointer;
+        height: 48px;
+        font-weight: bold;
+
+      }
+    }
+  }
+}
+
+// Direction RTl
+html[dir="rtl"] {
+
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  left: auto;
+  height: 24px;
+  width: 24px;
+  background-color: #fff;
+  border: 1px solid #b7bfc7;
+  padding: 1px;
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+    right: 4px;
+    left: auto;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background: red;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+  }
+}
+
+    .checkList {
+      list-style: none;
+      padding: 0;
+      .checkmark {
+        position: absolute;
+        top: 3px !important;
+        left: 0px;
+        height: 16px !important;
+        width: 16px !important;
+        background-color: #fff;
+        border: 1px solid #b7bfc7;
+        padding: 1px;
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 2px !important;
+          top: 2px !important;
+          width: 10px !important;
+          height: 10px !important;
+          background: red;
+          border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px;
+        }
+
+        label {
+          font-size: 0.875rem;
+        }
+      }
+      li {
+        display: flex;
+        margin: 8px 0;
+      }
+      span {
+        color: #828e99;
+        font-size: 14px;
+      }
+      .containerAr {
+        padding-right: 1.5rem !important;
+        padding-left: 0;
+        .checkmark {
+          position: absolute;
+          top: 5px;
+          left: 0px;
+          height: 14px;
+          width: 14px;
+          background-color: #fff;
+          border: 1px solid #b7bfc7;
+          padding: 1px;
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 4px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            background: red;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+          }
+
+        }
+      }
+      .container {
+        padding-left: 1.5rem !important;
+        .checkmark {
+          position: absolute;
+          top: 5px;
+          left: auto;
+          right: 0;
+          height: 14px;
+          width: 14px;
+          background-color: #fff;
+          border: 1px solid #b7bfc7;
+          padding: 1px;
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 2px !important;
+            top: 2px  !important;
+            right: auto;
+            width: 14px;
+            height: 14px;
+            background: red;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+          }
+
+          label {
+            font-size: 0.875rem;
+          }
+        }
+      }
+        .modal_header_img {
+        float: right;
+        cursor: pointer;
+      }
+    }
+  }
