@@ -40,7 +40,7 @@ function Categories() {
   return (
     <>
 
-      <div className={styles.container}>
+      <div className={styles.categoriesContainer}>
         <header>
           <h2>Categories</h2>
           <p>Here you can select category to explore more items</p>

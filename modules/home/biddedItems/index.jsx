@@ -39,7 +39,7 @@ function BiddedItems() {
     ],
   }
   return (
-    <div className={styles.container}>
+    <div className={styles.biddedItemsContainer}>
       <header>
         <h2>Most Bidded Items</h2>
         <p>Join the competition on most attractive items</p>
@@ -47,7 +47,7 @@ function BiddedItems() {
       <div className={styles.contentContainer}>
         <div className={styles.head}>
           <p>Choose the category</p>
-          <button>choose</button>
+          <button type="button">choose</button>
         </div>
         <div className={styles.cardsContainer}>
           <div className="cardItem">
