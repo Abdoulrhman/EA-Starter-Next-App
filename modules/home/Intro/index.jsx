@@ -6,7 +6,9 @@ function Intro() {
     <div className={styles.introContainer}>
       <header>
         <h2>Who we are</h2>
-        <p>Emirates Auctions is an electronic platform that provides services to suppliers and buyers</p>
+        <p>
+          Emirates Auctions is an electronic platform that provides services to suppliers and buyers
+        </p>
       </header>
       <div className={styles.cardsContainer}>
         <div className={styles.cardItem}>
@@ -18,7 +20,6 @@ function Intro() {
             <ul>
               <li>Customers have easy access to the auction</li>
               <li>Preferred strategic partner for all courts, governments and banks</li>
-
             </ul>
           </div>
         </div>
@@ -31,7 +32,9 @@ function Intro() {
             <ul>
               <li>Customers have easy access to the auction</li>
               <li>Preferred strategic partner for all courts, governments and banks</li>
-              <li>Platform that maximizes supplier sales revenue and eliminates pre- sale agents risk</li>
+              <li>
+                Platform that maximizes supplier sales revenue and eliminates pre- sale agents risk
+              </li>
             </ul>
           </div>
         </div>
@@ -44,7 +47,9 @@ function Intro() {
             <ul>
               <li>Customers have easy access to the auction</li>
               <li>Preferred strategic partner for all courts, governments and banks</li>
-              <li>Platform that maximizes supplier sales revenue and eliminates pre- sale agents risk</li>
+              <li>
+                Platform that maximizes supplier sales revenue and eliminates pre- sale agents risk
+              </li>
             </ul>
           </div>
         </div>

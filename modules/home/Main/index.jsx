@@ -6,7 +6,9 @@ function MainSection() {
     <main className={styles.mainSecContainer}>
       <div className={styles.content}>
         <h1 className={styles.title}>Find items and Bid now</h1>
-        <p className={styles.subTitle}>We have auctioned over 100,000 vehicles, 4500 properties and millions of other stuff.</p>
+        <p className={styles.subTitle}>
+          We have auctioned over 100,000 vehicles, 4500 properties and millions of other stuff.
+        </p>
         <div className={styles.inputContainer}>
           <input type="search" placeholder="Search..." />
         </div>

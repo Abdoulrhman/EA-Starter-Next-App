@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from 'react-slick'
+// import Slider from 'react-slick'
 import styles from './styles.module.scss'
 
 function Categories() {
@@ -102,7 +102,9 @@ function Categories() {
           </div>
           <div className={styles.platesNumbers}>
             <h3 className={styles.headTitle}>Latest Dubai Plates Numbers</h3>
-            <p className={styles.headsubTitle}>Select your emirate to bid on, or you can request a bespoke one</p>
+            <p className={styles.headsubTitle}>
+              Select your emirate to bid on, or you can request a bespoke one
+            </p>
             <div className={styles.platesNumbersContainer}>
               <div className={styles.platesNumbersItem}>
                 <div className={styles.logoContainer}>

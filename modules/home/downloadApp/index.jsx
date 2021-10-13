@@ -14,12 +14,15 @@ function DownloadApp() {
         </div>
         <div className={styles.content}>
           <h3 className={styles.title}>Download our app and keep on bidding!</h3>
-          <p className={styles.subTitle}>Get an optimized experience and enjoy bidding using our Emirates Auctions app on Android and iOS devices.</p>
+          <p className={styles.subTitle}>
+            Get an optimized experience and enjoy bidding using our Emirates Auctions app on
+            Android and iOS devices.
+          </p>
           <div className={styles.btnsContainer}>
-            <button className={styles.googleBtn}>
+            <button className={styles.googleBtn} type="button">
               <img src="/assets/icons/arrow-left.svg" alt="google play button" />
             </button>
-            <button className={styles.appleBtn}>
+            <button className={styles.appleBtn} type="button">
               <img src="/assets/icons/arrow-right.svg" alt="apple store button" />
             </button>
           </div>
