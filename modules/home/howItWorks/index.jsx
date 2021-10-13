@@ -16,7 +16,10 @@ function WorkSteps() {
             </div>
             <div className={styles.cardContent}>
               <h3>Set your bidding limit</h3>
-              <p>Set your bidding limit to bid automatically till you reach the amount you've set. Never miss an item that you've set your eyes upon!</p>
+              <p>
+                Set your bidding limit to bid automatically till you reach the amount you've set.
+                Never miss an item that you've set your eyes upon!
+              </p>
             </div>
           </div>
           <div className={styles.cardItem}>
@@ -25,7 +28,10 @@ function WorkSteps() {
             </div>
             <div className={styles.cardContent}>
               <h3>Start bidding on items</h3>
-              <p>Choose an item to bid on from our diverse categories of items that we constantly auction.</p>
+              <p>
+                Choose an item to bid on from our diverse categories of items
+                that we constantly auction.
+              </p>
             </div>
           </div>
           <div className={styles.cardItem}>
