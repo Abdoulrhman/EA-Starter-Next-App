@@ -1,8 +1,8 @@
 
 
 .Filter{
-    max-width: 25%;
-    margin: 50px;
+    max-width: 100%;
+    margin: 0px;
     background: #FAFBFB;
     padding: 25px;
     .texttopFilter{
@@ -11,6 +11,7 @@
         align-items: center;
         padding: 10px;
         border-bottom: 1px solid #E4E8F0;
+        margin-bottom: 2rem;
         .texthead1{
             text-align: left;
             font-weight: bold ;
@@ -141,7 +142,7 @@
         display: block;
       }
       .AccordionPanel{
-          padding: 10px;
+          padding: 0px;
       }
       /* Style the checkmark/indicator */
       .container .checkmark:after {
@@ -303,6 +304,8 @@ input[type=range]::-ms-thumb {
         color: #000;
         font-weight: bold;
         margin-top: 1rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
     }
 }
 .btnFilterSumbit{
@@ -316,7 +319,7 @@ input[type=range]::-ms-thumb {
     text-align: center;
     display: block;
     height: 42px;
-    margin: 60px auto;
+    margin: 25px auto 0;
     color: #fff;
     font-size: 14px;
 }

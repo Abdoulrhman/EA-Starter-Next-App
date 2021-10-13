@@ -13,7 +13,7 @@ function Specifications(props) {
     >
       <div className={styles.contentContainer}>
         <ul className={styles.itemsContainer}>
-          {OptionGroups.map(o => (
+          {OptionGroups.map((o) => (
             <li className={styles.item} key={o.Id}>
               <img src={o.ImageUrl} alt="icon" />
               <p className={styles.itemTitle}>{o.Title}</p>
@@ -30,7 +30,6 @@ function Specifications(props) {
         </ul>
       </div>
     </SectionLayout>
-    // {/* </div> */}
   )
 }
 

@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
+import styles from './styles.module.scss'
+import Search from '../SearchFilter/Search'
 
-import styles from './styles.module.scss';
-import Search from '../SearchFilter/Search';
 
 const Filter = () => (
   <div>
@@ -20,27 +20,30 @@ const Filter = () => (
           <div className={styles.AccordionPanel}>
             <form action="/action_page.php">
               <Search />
-              <label className={styles.container} htmlFor="test">
-                <span className={styles.textbody1}>Ford</span>
-                <span className={styles.textbody2}>18,113</span>
-                <input type="checkbox" id="test" />
-                <span className={styles.checkmark} />
-                {console.log('tets')}
-              </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
+                <span className={styles.textbody2}>18,113</span>
+                <input type="checkbox" />
+                <span className={styles.checkmark} />
+              </label>
+              <label className={styles.container}>
+                <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
@@ -59,24 +62,28 @@ const Filter = () => (
               <Search />
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
@@ -95,24 +102,28 @@ const Filter = () => (
               <Search />
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
@@ -131,24 +142,28 @@ const Filter = () => (
               <Search />
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
@@ -167,24 +182,28 @@ const Filter = () => (
               <Search />
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
               </label>
               <label className={styles.container}>
                 <span className={styles.textbody1}>Ford</span>
+                {' '}
                 <span className={styles.textbody2}>18,113</span>
                 <input type="checkbox" />
                 <span className={styles.checkmark} />
@@ -247,9 +266,9 @@ const Filter = () => (
           </div>
         </div>
       </div>
-      <button className={styles.btnFilterSumbit}>Show Results</button>
+      <button className={styles.btnFilterSumbit} type="button">Show Results</button>
     </div>
   </div>
-);
+)
 
-export default Filter;
+export default Filter

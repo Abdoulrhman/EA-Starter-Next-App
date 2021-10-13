@@ -33,11 +33,6 @@ function PaymentSection(props) {
                       {o.Name}
                     </li>
                   ))}
-                  {/* <li className={styles.active}>Emirates Islamic Bank</li>
-                  <li className={styles.disabled}>Emirates Islamic Bank</li>
-                  <li className={styles.disabled}>Emirates Islamic Bank</li>
-                  <li className={styles.disabled}>Emirates Islamic Bank</li>
-                  <li className={styles.disabled}>Emirates Islamic Bank</li> */}
                 </ul>
               </div>
               {/* Start Tabs */}
@@ -45,9 +40,6 @@ function PaymentSection(props) {
                 activePayment === index ? (
                   <React.Fragment key={index}>
                     <div className={styles.paymentInfo}>
-                      {/* <li className={activePayment===index?styles.active:styles.disabled} >
-                      {o.Name}
-                    </li> */}
                       <p>{o.Instruction}</p>
                       {o.Attributes
                         ? o.Attributes.map((attr, index) => (
@@ -57,14 +49,6 @@ function PaymentSection(props) {
                             </div>
                           ))
                         : ''}
-                      {/* <div className={styles.paymentDetails}>
-                    <p>Loading / unloading Fees :</p>
-                    <p>Emirates Auction</p>
-                  </div>
-                  <div className={styles.paymentDetails}>
-                    <p>Loading / unloading Fees :</p>
-                    <p>Emirates Auction</p>
-                  </div> */}
                     </div>
                     <div className={styles.paymentBtns}>
                       <button>Copy info</button>
@@ -75,36 +59,8 @@ function PaymentSection(props) {
                   ''
                 )
               )}
-              {/* <div className={styles.paymentInfo}>
-                  <p>
-                    You can make the payment through bank deposit or bank transfer.
-                    Please send us a copy of the transfer receipt and mention any of
-                    the won cars to: cs@emiratesauction.com.
-                  </p>
-                  <div className={styles.paymentDetails}>
-                    <p>Loading / unloading Fees :</p>
-                    <p>Emirates Auction</p>
-                  </div>
-                  <div className={styles.paymentDetails}>
-                    <p>Loading / unloading Fees :</p>
-                    <p>Emirates Auction</p>
-                  </div>
-                </div> */}
-              {/* <div className={styles.paymentBtns}>
-                  <button>Copy info</button>
-                  <button>Share info</button>
-                </div> */}
             </div>
           </div>
-          {/* Terms Section */}
-          {/* Terms Section */}
-          {/* <div className={styles.auctionDetails}>
-            <div className={styles.auctionDetailsHeader}>
-              <h4>TERMS AND CONDITIONS</h4>
-            </div>
-            <div className={styles.auctionDetailsBody} />
-          </div> */}
-          {/* Terms Section */}
         </div>
         {/* Auction Grid */}
       </div>

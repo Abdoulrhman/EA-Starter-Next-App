@@ -3,9 +3,6 @@ import styles from './styles.module.scss'
 import SectionLayout from '../SectionLayout'
 
 function ValueService(props) {
-  console.log('Value Service')
-  console.log(props)
-
   const { Title, OptionGroups, EnableCollapse, Collapsed } = props.SectionData
 
   return (
@@ -16,7 +13,7 @@ function ValueService(props) {
     >
       <div className={styles.contentContainer}>
         <ul className={styles.itemsContainer}>
-          {OptionGroups.map(o => (
+          {OptionGroups.map((o) => (
             <li className={styles.item} key={o.Id}>
               <div
                 className={styles.itemTitle}
@@ -29,7 +26,6 @@ function ValueService(props) {
         </ul>
       </div>
     </SectionLayout>
-    // {/* </div> */}
   )
 }
 

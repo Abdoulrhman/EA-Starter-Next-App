@@ -1,0 +1,183 @@
+.containerCategories{
+    padding:35px 35px 35px 35px;
+     @media(max-width:992px){
+       padding: 35px 10px 35px 10px;
+                
+            }
+    .flexCat{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            font-size: 24px;
+            font-weight: 500;
+            color: #000;
+            font-size: 24px;
+            font-weight: 500;
+            color: #000;
+            display: flex;
+            width: 50%;
+            justify-content: start;
+            align-items: center;
+            @media(max-width:992px){
+                font-size: 14px;  
+            }
+        }
+        a{
+            font-size: 21px;
+            font-weight: 500;
+            color: #424a63;
+            text-decoration: underline;
+            @media(max-width:992px){
+                font-size: 14px;  
+            }
+        }
+        .textIcon{
+        
+            margin-right: 5px;
+        }
+    }
+    .Categories{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        // flex: 1 0 29%;
+        flex-wrap: wrap;
+        .item_Categories{
+            flex: 1 0 13%;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+            background-color: #fff;
+            margin-right: 1rem;
+            padding: 15px;
+            margin-bottom: 1rem;
+            @media(max-width:1200px){
+                flex: 1 0 20%;
+            }
+            @media(max-width:992px){
+             flex: 1 0 44%; 
+            }
+            &:nth-child(7n + 0) {
+                margin-right: 0;
+                @media (max-width: 1200px) {
+                    margin-right: 1rem;
+                }
+            }
+            &:nth-child(4n + 0) {
+                margin-right: 0;
+            }
+        }
+        .textnumber{
+        min-width: 48px;
+        height: 25px;
+        padding: 0 14px 4px;
+        opacity: 0.85;
+        border-radius: 17.5px;
+        background-color: #e51937;
+        color: #fff;
+        line-height: 1.8;
+        }
+        h4{
+            font-size: 21px;
+            font-weight: 500;
+            color: #000;
+            margin: 0;
+            margin-top: 13px;
+            margin-bottom: 3px;
+        }
+        .textColor{
+            color: #5c6378;
+            font-size: 18px;
+            font-weight: 500;
+            position: relative;
+            padding-left: 15px;
+            margin: 0;
+            &::before{
+                content:" ";
+                position: absolute;
+                left: 0px;
+                margin-right: 8px;
+                background-color: #e51937;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                top: 5px;
+            }
+        }
+        .text_cat{
+            font-size: 16px;
+            font-weight: normal;
+            color:#7b8091;
+            margin: 0;
+            margin-bottom: 3px;
+        }
+    }
+}
+
+
+
+html[dir="rtl"] {
+    .containerCategories{
+        padding: 35px 35px 35px 35px;
+        .flexCat{
+            
+            h1{
+                
+                justify-content: start;
+            }
+            a{
+               
+               
+            }
+            .textIcon{
+            
+                margin-right: 0;
+                margin-left: 5px;
+            }
+        }
+        .Categories{
+            
+            .item_Categories{
+                margin-right: 0;
+                margin-left: 1rem;
+                @media(max-width:1200px){
+                }
+
+                
+                &:nth-child(7n + 0) {
+                    margin-left: 0;
+                    @media (max-width: 1200px) {
+                        margin-left: 1rem;
+                    }
+                }
+                &:nth-child(4n + 0) {
+                    margin-left: 0;
+                }
+            }
+            .textnumber{
+            
+            
+            }
+            h4{
+               
+            }
+            .textColor{
+               
+                padding-left: 0;
+                padding-right: 15px;
+               
+                &::before{
+                    left: auto;
+                    right: 0px;
+                    margin-left: 8px;
+                    margin-right: 0px;
+                   
+                }
+            }
+            .text_cat{
+                
+            }
+        }
+    }
+    
+}

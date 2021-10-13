@@ -25,11 +25,11 @@ function MainSlider(props) {
     <img src={children.type} {...props} />
   )
   console.log(props)
-  const imagesArray = props.Images.OptionGroups.map(obj => obj.Images[0])
+  const imagesArray = props.Images.OptionGroups.map((obj) => obj.Images[0])
   console.log(imagesArray)
   const [Imgs, setImgs] = useState(imagesArray)
 
-  const handleOpen = i => {
+  const handleOpen = (i) => {
     setOpen(true)
     setMainImage(i)
     setTimeout(() => {
@@ -50,14 +50,14 @@ function MainSlider(props) {
     speed: 500,
     // asNavFor: nav2,
     easing: 'ease-out',
-    ref: slider => (slider1.current = slider),
+    ref: (slider) => (slider1.current = slider),
     responsive: [
       {
         breakpoint: 500,
         settings: {
           dots: true,
           arrows: false,
-          appendDots: dots => (
+          appendDots: (dots) => (
             <MagicSliderDots dots={dots} numDotsToShow={5} dotWidth={30} />
           ),
         },
@@ -74,7 +74,7 @@ function MainSlider(props) {
     arrows: true,
     easing: 'ease-out',
     infinite: false,
-    ref: slider => (slider2.current = slider),
+    ref: (slider) => (slider2.current = slider),
     nextArrow: (
       <SlickArrowFix>
         <RightArrow />
@@ -94,7 +94,7 @@ function MainSlider(props) {
           <div
             key={img}
             className={styles.mainImageContainer}
-            onClick={e => {
+            onClick={(e) => {
               e.preventDefault()
               handleOpen(i)
             }}
@@ -127,7 +127,7 @@ function MainSlider(props) {
       {open && (
         <div>
           <ImageGallery
-            onScreenChange={e => setOpen(e)}
+            onScreenChange={(e) => setOpen(e)}
             ref={screen}
             showPlayButton={false}
             startIndex={mainImage}
@@ -135,7 +135,7 @@ function MainSlider(props) {
             slideOnThumbnailOver
             showIndex
             items={Imgs.map(
-              v =>
+              (v) =>
                 (v = {
                   original: getImageUrl(v.ImageLink, 600, 386),
                   thumbnail: getImageUrl(v.ImageLink, 600, 386),

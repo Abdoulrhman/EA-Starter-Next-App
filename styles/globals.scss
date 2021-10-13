@@ -3,17 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 // init base
 @import './helpers/helper_variables';
 @import './helpers/helper_base';
-
 
 //- layout
 @import '../layouts/Header/Header.scss';
 @import '../layouts/Footer/Footer.scss';
 @import '../layouts/MobileMenu/MobileMenu.scss';
 
-
-
+// react-image-gallery
+@import '~react-image-gallery/styles/scss/image-gallery.scss';

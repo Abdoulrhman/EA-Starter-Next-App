@@ -17,7 +17,7 @@ function CostSection(props) {
             <div className={styles.auctionDetailsBody}>
               {/* start Accordion */}
               <div className={styles.auctionAccordion}>
-                {OptionGroups.map(o =>
+                {OptionGroups.map((o) =>
                   o.Id !== 26 ? (
                     <div className={styles.auctionAccordionHeader} key={o.Id}>
                       <span className={styles.costInfo}>{o.Title} :</span>
@@ -38,15 +38,6 @@ function CostSection(props) {
               {/* start Accordion */}
             </div>
           </div>
-          {/* Terms Section */}
-          {/* Terms Section */}
-          {/* <div className={styles.auctionDetails}>
-          <div className={styles.auctionDetailsHeader}>
-            <h4>TERMS AND CONDITIONS</h4>
-          </div>
-          <div className={styles.auctionDetailsBody} />
-        </div> */}
-          {/* Terms Section */}
         </div>
         {/* Auction Grid */}
       </div>

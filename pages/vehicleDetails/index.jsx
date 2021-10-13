@@ -12,6 +12,10 @@ import CostSection from '../../modules/vehicles/VehicleDetails/CostSection'
 import PaymentSection from '../../modules/vehicles/VehicleDetails/PaymentSection'
 import ValueService from '../../modules/vehicles/VehicleDetails/ValueService'
 import TermsAndConditions from '../../modules/vehicles/VehicleDetails/TermsAndConditions'
+import Gallery from '../../modules/vehicles/VehicleDetails/Gallery/Gallery'
+import INSPECTIONLOCATION from '../../modules/vehicles/VehicleDetails/INSPECTIONLOCATION/INSPECTIONLOCATION'
+import DELIVERY from '../../modules/vehicles/VehicleDetails/DELIVERY/DELIVERY'
+
 // import VehicleDetailsApi from '../../network/api/vehicleDetails'
 
 function VehicleDetailsPage(props) {
@@ -85,11 +89,16 @@ function VehicleDetailsPage(props) {
                 case 'VALUE ADDED SERVICE':
                   return <ValueService SectionData={section} key={section.Id} />
                 case 'GALLERY':
-                  return ''
+                  return <Gallery SectionData={section} key={section.Id} />
                 case 'INSPECTION LOCATION':
-                  return ''
+                  return (
+                    <INSPECTIONLOCATION
+                      SectionData={section}
+                      key={section.Id}
+                    />
+                  )
                 case 'DELIVERY':
-                  return ''
+                  return <DELIVERY SectionData={section} key={section.Id} />
                 case 'ESTIMATED COST':
                   return <CostSection SectionData={section} key={section.Id} />
                 case 'TERMS AND CONDITIONS':
@@ -132,11 +141,16 @@ function VehicleDetailsPage(props) {
                 case 'VALUE ADDED SERVICE':
                   return <ValueService SectionData={section} key={section.Id} />
                 case 'GALLERY':
-                  return ''
+                  return <Gallery SectionData={section} key={section.Id} />
                 case 'INSPECTION LOCATION':
-                  return ''
+                  return (
+                    <INSPECTIONLOCATION
+                      SectionData={section}
+                      key={section.Id}
+                    />
+                  )
                 case 'DELIVERY':
-                  return ''
+                  return <DELIVERY SectionData={section} key={section.Id} />
                 case 'ESTIMATED COST':
                   return <CostSection SectionData={section} key={section.Id} />
                 case 'TERMS AND CONDITIONS':
