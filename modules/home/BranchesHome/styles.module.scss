@@ -1,0 +1,131 @@
+.Gallery{
+    background-image: radial-gradient(circle at 50% 0, #fbfdfdbd, #dde8ead1 76%);
+    padding: 20px;
+    box-shadow: 0px 5px 24px #656F7C29;
+    border-radius: 8px;  
+    margin: 20px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+		@media(max-width:992px){
+			padding: 8px !important;
+		}
+	.padding_grid{
+		@media(max-width:992px){
+			padding: 0 !important;
+		}
+	}  
+    .ServiceHeader{
+        display: block;
+        text-align: center;
+        position: relative;
+                &::after{
+            content:" ";
+            position: absolute;
+            background-color: #e51937;
+            width: 65px;
+             height: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 48%;
+            bottom: -15px;
+              @media(max-width:992px){
+                left: 38%;
+            }
+}
+    h1{
+        text-transform: capitalize;
+        font-size: 38px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2d2d2d;
+        position: relative;
+            p{
+         margin: 15px 0 0;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2d2d2d;
+            }
+        }
+    }
+
+    
+    
+    .ServiceBody{
+        margin-top: 3rem;
+        .content{
+            flex-wrap: wrap;
+            display: flex;
+            margin: 0 5rem;
+            @media(max-width: 992px){
+                margin: 0px;
+            }
+        .card{
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 2px 32px #656f7c29;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 2rem;
+            flex: 1 0 18% !important;
+            margin-right: 30px;
+             @media(max-width: 1200px){
+               flex: 1 0 30% !important;
+            }
+            @media(max-width: 992px){
+                margin-right: 1px;
+            }
+            h5{
+                text-align: left;
+                letter-spacing: 0px;
+                color: #2D2D2D;
+                margin-bottom: 15px;font-weight: 600;margin-top: 1rem;
+                font-size: 21px;
+            }
+            p{
+                text-align: left;
+                letter-spacing: 0px;
+                color: #2D2D2D;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 1rem;
+                font-size: 16px;
+            }
+            .FlexBranches{
+                display: flex;
+                justify-content:space-between;
+                align-items:center;
+                margin-top: 1rem;
+            }
+            span{
+                letter-spacing: var(--unnamed-character-spacing-0);
+                text-align: left;
+                letter-spacing: 0px;
+                color: #2D2D2D;
+            }
+            .iconFlex{
+                background: #E51937 0% 0% no-repeat padding-box;
+                border-radius: 4px;   
+                width: 30px;
+                height: 30px;          
+            }
+        }
+        
+    }
+      .marginLeft{
+                display: flex;
+                margin: auto;
+                flex-wrap: wrap;
+            }
+    }
+
+}
+

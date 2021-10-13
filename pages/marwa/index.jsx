@@ -9,8 +9,13 @@ import INSPECTIONLOCATION from '../../modules/vehicles/vehiclesList/components/V
 import DELIVERY from '../../modules/vehicles/vehiclesList/components/VehicleDetails/DELIVERY/DELIVERY'
 import Gallery from '../../modules/vehicles/vehiclesList/components/VehicleDetails/Gallery/Gallery'
 import BiddingUI2 from '../../modules/vehicles/vehiclesList/components/BiddingUI2/BiddingUI2'
+import GalleryHome from '../../modules/home/GalleryHome/GalleryHome'
+import NewsHome from '../../modules/home/NewsHome/NewsHome'
+import TestimoniosHome from '../../modules/home/TestimoniosHome/TestimoniosHome'
+import PartnersHome from '../../modules/home/PartnersHome/PartnersHome'
 import VehicleLandingPage from '../../modules/vehicles/vehiclesList/components/VehicleLandingPage/VehicleLandingPage'
-
+import NumberHome from '../../modules/home/NumberHome/NumberHome'
+import BranchesHome from '../../modules/home/BranchesHome/BranchesHome'
 
 function TestPage() {
   return (
@@ -27,6 +32,12 @@ function TestPage() {
         <DELIVERY />
         <Gallery />
         <VehicleLandingPage />
+        <GalleryHome />
+        <NewsHome />
+        <TestimoniosHome />
+        <PartnersHome />
+        <NumberHome />
+        <BranchesHome />
       </div>
     </div>
   )

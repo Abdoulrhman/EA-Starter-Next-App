@@ -251,13 +251,13 @@ export default class AsNavFor extends Component {
         </Slider>
         <div className={styles.slideSmall}>
           <Slider
+            arrows={false}
             asNavFor={this.state.nav1}
             ref={(slider) => (this.slider2 = slider)}
             slidesToShow={5}
             swipeToSlide
             focusOnSelect
             dots
-            arrows
           >
             <div>
               <div className={styles.imgPostion}>

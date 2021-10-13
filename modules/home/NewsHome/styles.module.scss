@@ -1,0 +1,136 @@
+.Gallery{
+    background-image: radial-gradient(circle at 50% 0, #fbfdfd, #f5f9fa 76%);
+    padding: 20px;
+    box-shadow: 0px 5px 24px #656F7C29;
+    border-radius: 8px;  
+    margin: 20px; 
+		@media(max-width:992px){
+			padding: 8px !important;
+		}
+	.padding_grid{
+		@media(max-width:992px){
+			padding: 0 !important;
+		}
+	}  
+    .ServiceHeader{
+        display: block;
+        text-align: center;
+        position: relative;
+                &::after{
+            content:" ";
+            position: absolute;
+            background-color: #e51937;
+            width: 65px;
+             height: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 48%;
+            bottom: -15px;
+            @media(max-width:992px){
+                left: 38%;
+            }
+}
+    h1{
+        text-transform: capitalize;
+        font-size: 38px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2d2d2d;
+        position: relative;
+            p{
+         margin: 15px 0 0;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2d2d2d;
+            }
+        }
+    }
+    
+.ServiceBody{
+    margin: 35px 5rem;
+    margin-top: 3rem !important;
+    @media(max-width:992px){
+			margin: 0;
+		}
+}
+      .btnGallery{
+    border-radius: 4px;
+    box-shadow: 0 2px 7px 0 rgba(0, 132, 255, 0.19);
+    background-color: #e51937;
+    padding: .7rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    color: #fff;
+    margin: auto;
+     @media(max-width:992px){
+			font-size: 14px;
+           padding: .5rem 1rem;
+		}
+    }
+    .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #e51937 !important;
+    }
+    .slick-dots li button:before{
+        font-size: 12px !important;
+    }
+    .card{
+        border-radius: 10px;
+        box-shadow: 0 2px 32px 0 #e0ecee;
+        background-color: #fff;
+        padding: 0px;
+        margin:  15px;
+        .card_body{
+            padding: 15px;
+        }
+        img{
+          border-radius: 10px;
+          margin-bottom: 2rem;  
+           @media(max-width:992px){
+			margin-bottom: .5rem;
+		}
+        }
+           .card_title{
+        font-size: 24px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.83;
+        letter-spacing: -0.86px;
+        color: #424a64;
+        margin-bottom: 1rem;
+        @media(max-width:992px){
+			font-size: 18px;
+            margin-bottom: .5rem;
+		}
+    }
+    .card_text{
+        font-size: 21px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        color: #425679;
+        margin-bottom: 1.5rem;
+        @media(max-width:992px){
+			font-size: 14px;
+            margin-bottom: .5rem;
+            line-height:normal;
+		}
+    }
+    }
+ 
+}

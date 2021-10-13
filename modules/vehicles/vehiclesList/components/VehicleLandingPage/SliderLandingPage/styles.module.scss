@@ -5,9 +5,12 @@
     box-shadow: 0 19px 79px 0 rgba(0, 0, 0, 0.1);
     padding: 15px 0px 15px 15px;
     @media(max-width:992px){
-       margin: 35px 10px 35px 10px;
+       margin: 0px 10px 0px 10px;
                 
             }
+      .slick-next {
+        display:none !important;
+    }      
     .slick-next:before {
         // content:  url('../../../assets//images//landingPAge/view.png');
     }
@@ -17,6 +20,8 @@
     }
     
 }
+
+
 .flexAsNav{
     display:  flex !important;
     @media(max-width:992px){
@@ -174,7 +179,10 @@
             box-shadow: 0 19px 79px 0 rgba(0, 0, 0, 0.1);
             border-radius: 10px;
              @media(max-width:992px){
-                display: none !important;
+                   background: linear-gradient(
+                    180deg, #ffffff00, #f2f2f200);
+                        box-shadow: none;
+                            padding: 0 0 27px 0;
             }
 }
 .slick-dots li.slick-active button:before {
@@ -195,6 +203,10 @@
 }
 .imgPostion{
     position: relative;
+    @media(max-width:992px){
+      display: none;
+                
+            }
 }
 .textSlidSmalls{
     position: absolute;
@@ -217,7 +229,7 @@
     padding: 1.2rem 4rem;
     border-radius: 40px;
      @media(max-width:992px){
-          padding: 1.2rem 1rem;
+          padding: .7rem 1rem;
             }
 
 
