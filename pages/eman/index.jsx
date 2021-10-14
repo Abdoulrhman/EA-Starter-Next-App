@@ -28,8 +28,8 @@ function index() {
       <Intro />
       <WorkSteps />
       <DownloadApp />
-      <BiddedItems />
-      <Categories />
+      {/* <BiddedItems />
+      <Categories /> */}
     </div>
   )
 }

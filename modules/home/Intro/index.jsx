@@ -13,7 +13,7 @@ function Intro() {
       <div className={styles.cardsContainer}>
         <div className={styles.cardItem}>
           <div className={styles.iconContainer}>
-            <img src="/assets/icons/who-sec-1.svg" alt="icon" />
+            <img src="/assets/home/intro/who-sec-1.svg" alt="icon" />
           </div>
           <div className={styles.cardContent}>
             <h3>Governance and Transparency</h3>
@@ -25,7 +25,7 @@ function Intro() {
         </div>
         <div className={styles.cardItem}>
           <div className={styles.iconContainer}>
-            <img src="/assets/icons/who-sec-2.svg" alt="icon" />
+            <img src="/assets/home/intro/who-sec-2.svg" alt="icon" />
           </div>
           <div className={styles.cardContent}>
             <h3>Governance and Transparency</h3>
@@ -40,7 +40,7 @@ function Intro() {
         </div>
         <div className={styles.cardItem}>
           <div className={styles.iconContainer}>
-            <img src="/assets/icons/who-sec-3.svg" alt="icon" />
+            <img src="/assets/home/intro/who-sec-3.svg" alt="icon" />
           </div>
           <div className={styles.cardContent}>
             <h3>Governance and Transparency</h3>

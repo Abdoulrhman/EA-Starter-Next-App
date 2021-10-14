@@ -50,21 +50,19 @@ function BiddedItems() {
           <button type="button">choose</button>
         </div>
         <div className={styles.cardsContainer}>
-          <div className="cardItem">
-            <Slider {...settings}>
-              <GridCard />
-              <GridCard />
-              <GridCard />
-              <GridCard />
-              <GridCard />
-              <GridCard />
-              <GridCard />
-              <GridCard />
-              <GridCard />
-              <GridCard />
-              <GridCard />
-            </Slider>
-          </div>
+          <Slider {...settings}>
+            <GridCard />
+            <GridCard />
+            <GridCard />
+            <GridCard />
+            <GridCard />
+            <GridCard />
+            <GridCard />
+            <GridCard />
+            <GridCard />
+            <GridCard />
+            <GridCard />
+          </Slider>
         </div>
       </div>
     </div>

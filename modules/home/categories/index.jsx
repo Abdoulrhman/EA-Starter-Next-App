@@ -1,42 +1,42 @@
 import React from 'react'
-// import Slider from 'react-slick'
+import Slider from 'react-slick'
 import styles from './styles.module.scss'
 
 function Categories() {
-//   const settings = {
-//     dots: true,
-//     infinite: false,
-//     speed: 500,
-//     slidesToShow: 5,
-//     slidesToScroll: 5,
-//     initialSlide: 5,
-//     responsive: [
-//       {
-//         breakpoint: 1024,
-//         settings: {
-//           slidesToShow: 4,
-//           slidesToScroll: 4,
-//           infinite: true,
-//           dots: true,
-//         },
-//       },
-//       {
-//         breakpoint: 600,
-//         settings: {
-//           slidesToShow: 3,
-//           slidesToScroll: 3,
-//           initialSlide: 3,
-//         },
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           slidesToShow: 3,
-//           slidesToScroll: 3,
-//         },
-//       },
-//     ],
-//   }
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    initialSlide: 5,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+    ],
+  }
   return (
     <>
 
@@ -49,55 +49,59 @@ function Categories() {
           <div className={styles.selectCategory}>
             <h3 className={styles.headTitle}>Select Category</h3>
             <div className={styles.selectCategoryContainer}>
-              <div className={styles.selectCategoryItem}>
-                <div className={styles.iconContainer}>
-                  <img src="/assets/icons/home/category/icons/category-sec-1.svg" alt="" />
+              <Slider {...settings}>
+
+                <div className={styles.selectCategoryItem}>
+                  <div className={styles.iconContainer}>
+                    <img src="/assets/home/category/icons/category-sec-1.svg" alt="" />
+                  </div>
+                  <h5 className={styles.itemTitle}>Vehicle</h5>
+                  <p className={styles.itemsubTitle}>12h:3m</p>
                 </div>
-                <h5 className={styles.itemTitle}>Vehicle</h5>
-                <p className={styles.itemsubTitle}>12h:3m</p>
-              </div>
-              <div className={styles.selectCategoryItem}>
-                <div className={styles.iconContainer}>
-                  <img src="/assets/icons/home/category/icons/category-sec-1.svg" alt="" />
+                <div className={styles.selectCategoryItem}>
+                  <div className={styles.iconContainer}>
+                    <img src="/assets/home/category/icons/category-sec-1.svg" alt="" />
+                  </div>
+                  <h5 className={styles.itemTitle}>Vehicle</h5>
+                  <p className={styles.itemsubTitle}>12h:3m</p>
                 </div>
-                <h5 className={styles.itemTitle}>Vehicle</h5>
-                <p className={styles.itemsubTitle}>12h:3m</p>
-              </div>
-              <div className={styles.selectCategoryItem}>
-                <div className={styles.iconContainer}>
-                  <img src="/assets/icons/home/category/icons/category-sec-1.svg" alt="" />
+                <div className={styles.selectCategoryItem}>
+                  <div className={styles.iconContainer}>
+                    <img src="/assets/home/category/icons/category-sec-1.svg" alt="" />
+                  </div>
+                  <h5 className={styles.itemTitle}>Vehicle</h5>
+                  <p className={styles.itemsubTitle}>12h:3m</p>
                 </div>
-                <h5 className={styles.itemTitle}>Vehicle</h5>
-                <p className={styles.itemsubTitle}>12h:3m</p>
-              </div>
-              <div className={styles.selectCategoryItem}>
-                <div className={styles.iconContainer}>
-                  <img src="/assets/icons/home/category/icons/category-sec-1.svg" alt="" />
+                <div className={styles.selectCategoryItem}>
+                  <div className={styles.iconContainer}>
+                    <img src="/assets/home/category/icons/category-sec-1.svg" alt="" />
+                  </div>
+                  <h5 className={styles.itemTitle}>Vehicle</h5>
+                  <p className={styles.itemsubTitle}>12h:3m</p>
                 </div>
-                <h5 className={styles.itemTitle}>Vehicle</h5>
-                <p className={styles.itemsubTitle}>12h:3m</p>
-              </div>
-              <div className={styles.selectCategoryItem}>
-                <div className={styles.iconContainer}>
-                  <img src="/assets/icons/home/category/icons/category-sec-1.svg" alt="" />
+                <div className={styles.selectCategoryItem}>
+                  <div className={styles.iconContainer}>
+                    <img src="/assets/home/category/icons/category-sec-1.svg" alt="" />
+                  </div>
+                  <h5 className={styles.itemTitle}>Vehicle</h5>
+                  <p className={styles.itemsubTitle}>12h:3m</p>
                 </div>
-                <h5 className={styles.itemTitle}>Vehicle</h5>
-                <p className={styles.itemsubTitle}>12h:3m</p>
-              </div>
-              <div className={styles.selectCategoryItem}>
-                <div className={styles.iconContainer}>
-                  <img src="/assets/icons/home/category/icons/category-sec-1.svg" alt="" />
+                <div className={styles.selectCategoryItem}>
+                  <div className={styles.iconContainer}>
+                    <img src="/assets/home/category/icons/category-sec-1.svg" alt="" />
+                  </div>
+                  <h5 className={styles.itemTitle}>Vehicle</h5>
+                  <p className={styles.itemsubTitle}>12h:3m</p>
                 </div>
-                <h5 className={styles.itemTitle}>Vehicle</h5>
-                <p className={styles.itemsubTitle}>12h:3m</p>
-              </div>
-              <div className={styles.selectCategoryItem}>
-                <div className={styles.iconContainer}>
-                  <img src="/assets/icons/home/category/icons/category-sec-1.svg" alt="" />
+                <div className={styles.selectCategoryItem}>
+                  <div className={styles.iconContainer}>
+                    <img src="/assets/home/category/icons/category-sec-1.svg" alt="" />
+                  </div>
+                  <h5 className={styles.itemTitle}>Vehicle</h5>
+                  <p className={styles.itemsubTitle}>12h:3m</p>
                 </div>
-                <h5 className={styles.itemTitle}>Vehicle</h5>
-                <p className={styles.itemsubTitle}>12h:3m</p>
-              </div>
+
+              </Slider>
             </div>
           </div>
           <div className={styles.platesNumbers}>
@@ -109,7 +113,7 @@ function Categories() {
               <div className={styles.platesNumbersItem}>
                 <div className={styles.logoContainer}>
                   <div className={styles.logo}>
-                    <img src="/assets/icons/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
+                    <img src="/assets/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
                   </div>
                   <div className={styles.label}>
                     <p>235</p>
@@ -123,7 +127,7 @@ function Categories() {
               <div className={styles.platesNumbersItem}>
                 <div className={styles.logoContainer}>
                   <div className={styles.logo}>
-                    <img src="/assets/icons/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
+                    <img src="/assets/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
                   </div>
                   <div className={styles.label}>
                     <p>235</p>
@@ -137,7 +141,7 @@ function Categories() {
               <div className={styles.platesNumbersItem}>
                 <div className={styles.logoContainer}>
                   <div className={styles.logo}>
-                    <img src="/assets/icons/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
+                    <img src="/assets/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
                   </div>
                   <div className={styles.label}>
                     <p>235</p>
@@ -151,7 +155,7 @@ function Categories() {
               <div className={styles.platesNumbersItem}>
                 <div className={styles.logoContainer}>
                   <div className={styles.logo}>
-                    <img src="/assets/icons/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
+                    <img src="/assets/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
                   </div>
                   <div className={styles.label}>
                     <p>235</p>
@@ -165,7 +169,7 @@ function Categories() {
               <div className={styles.platesNumbersItem}>
                 <div className={styles.logoContainer}>
                   <div className={styles.logo}>
-                    <img src="/assets/icons/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
+                    <img src="/assets/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
                   </div>
                   <div className={styles.label}>
                     <p>235</p>
@@ -179,7 +183,7 @@ function Categories() {
               <div className={styles.platesNumbersItem}>
                 <div className={styles.logoContainer}>
                   <div className={styles.logo}>
-                    <img src="/assets/icons/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
+                    <img src="/assets/home/category/logos/logo1.png" alt="Abi Dhabi logo" />
                   </div>
                   <div className={styles.label}>
                     <p>235</p>

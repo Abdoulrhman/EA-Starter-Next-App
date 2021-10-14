@@ -10,7 +10,7 @@ function DownloadApp() {
       </header>
       <div className={styles.contentContainer}>
         <div className={styles.imageContainer}>
-          <img src="/assets/images/car.png" alt="mockup" />
+          <img src="/assets/home/appDownload/home-mockups.png" alt="mockup" />
         </div>
         <div className={styles.content}>
           <h3 className={styles.title}>Download our app and keep on bidding!</h3>

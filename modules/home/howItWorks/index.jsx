@@ -12,7 +12,7 @@ function WorkSteps() {
         <div className={styles.cardsContainer}>
           <div className={styles.cardItem}>
             <div className={styles.cardIcon}>
-              <img src="/assets/icons/works-sec-1.svg" alt="icon" />
+              <img src="/assets/home/worksSteps/works-sec-1.svg" alt="icon" />
             </div>
             <div className={styles.cardContent}>
               <h3>Set your bidding limit</h3>
@@ -24,7 +24,7 @@ function WorkSteps() {
           </div>
           <div className={styles.cardItem}>
             <div className={styles.cardIcon}>
-              <img src="/assets/icons/works-sec-2.svg" alt="icon" />
+              <img src="/assets/home/worksSteps/works-sec-2.svg" alt="icon" />
             </div>
             <div className={styles.cardContent}>
               <h3>Start bidding on items</h3>
@@ -36,7 +36,7 @@ function WorkSteps() {
           </div>
           <div className={styles.cardItem}>
             <div className={styles.cardIcon}>
-              <img src="/assets/icons/works-sec-3.svg" alt="icon" />
+              <img src="/assets/home/worksSteps/works-sec-3.svg" alt="icon" />
             </div>
             <div className={styles.cardContent}>
               <h3>Checkout your winning bids</h3>
